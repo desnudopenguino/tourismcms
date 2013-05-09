@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  tour_id: 1
+  latitude: 
+  longitude: 
+  radius: 
+  title: MyString
+  description: MyString
+
+two:
+  tour_id: 1
+  latitude: 
+  longitude: 
+  radius: 
+  title: MyString
+  description: MyString

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  attraction_id: 1
+  type: 
+  content: MyString
+
+two:
+  attraction_id: 1
+  type: 
+  content: MyString

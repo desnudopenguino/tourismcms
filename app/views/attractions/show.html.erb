@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Tour:</b>
+  <%= @attraction.tour_id %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @attraction.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @attraction.longitude %>
+</p>
+
+<p>
+  <b>Radius:</b>
+  <%= @attraction.radius %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @attraction.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @attraction.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_attraction_path(@attraction) %> |
+<%= link_to 'Back', attractions_path %>
