@@ -1,4 +1,14 @@
 Bct::Application.routes.draw do
+  resources :venues do
+    resources :tours do
+      resources :attractions
+    end
+  end
+
+
+  resources :visitors
+
+
   resources :media
 
 
@@ -8,7 +18,7 @@ Bct::Application.routes.draw do
   resources :tours do
     resources :attractions
   end
-
+  
 
   resources :locations do
     resources :tours do
