@@ -2,5 +2,5 @@ class Tour < ActiveRecord::Base
   attr_accessible :description, :id, :location_id, :title
   
   belongs_to :venue
-  has_many :attractions
+  has_and_belongs_to_many :attractions
 end

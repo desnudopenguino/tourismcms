@@ -2,7 +2,7 @@ class ToursController < ApplicationController
   # GET /tours
   # GET /tours.json
   def index
-    @tours = Tour.all
+    @tours = Venue.find(params[:venue_id]).tours
 
     respond_to do |format|
       format.html # index.html.erb
@@ -13,6 +13,7 @@ class ToursController < ApplicationController
   # GET /tours/1
   # GET /tours/1.json
   def show
+    @venue = Venue.find(params[:venue_id])
     @tour = Tour.find(params[:id])
 
     respond_to do |format|
@@ -24,6 +25,7 @@ class ToursController < ApplicationController
   # GET /tours/new
   # GET /tours/new.json
   def new
+    @venue = Venue.find(params[:venue_id])
     @tour = Tour.new
 
     respond_to do |format|
@@ -40,11 +42,13 @@ class ToursController < ApplicationController
   # POST /tours
   # POST /tours.json
   def create
+    @venue = Venue.find(params[:venue_id])
     @tour = Tour.new(params[:tour])
+    @tour.venue = @venue
 
     respond_to do |format|
       if @tour.save
-        format.html { redirect_to @tour, notice: 'Tour was successfully created.' }
+        format.html { redirect_to venue_tour_path(@venue, @tour), notice: 'Tour was successfully created.' }
         format.json { render json: @tour, status: :created, location: @tour }
       else
         format.html { render action: "new" }
