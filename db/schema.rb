@@ -11,7 +11,32 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130603143637) do
+ActiveRecord::Schema.define(:version => 20130609192724) do
+
+  create_table "assets", :force => true do |t|
+    t.integer  "venue_id"
+    t.string   "assetType"
+    t.string   "location"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "assetvenues", :force => true do |t|
+    t.integer  "venue_id"
+    t.string   "type"
+    t.string   "url"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "attraction_tours", :force => true do |t|
+    t.integer  "attraction_id"
+    t.integer  "tour_id"
+    t.integer  "mediatype"
+    t.string   "media"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
 
   create_table "attractions", :force => true do |t|
     t.integer  "tour_id"
@@ -22,6 +47,15 @@ ActiveRecord::Schema.define(:version => 20130603143637) do
     t.string   "description"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "attractions_tours", :force => true do |t|
+    t.integer  "attraction_id"
+    t.integer  "tour_id"
+    t.integer  "mediatype"
+    t.string   "media"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   create_table "locations", :force => true do |t|
@@ -53,6 +87,14 @@ ActiveRecord::Schema.define(:version => 20130603143637) do
   end
 
   create_table "users", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "venue_assets", :force => true do |t|
+    t.integer  "venue_id"
+    t.string   "type"
+    t.string   "asset"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

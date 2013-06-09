@@ -1,31 +1,19 @@
 Bct::Application.routes.draw do
-  resources :venues do
-    resources :tours do
-      resources :attractions
-    end
-  end
 
+  resources :venues do
+    resources :tours
+    resources :assets
+  end
+  
+  resources :tours do
+   resources :attractions 
+  end
 
   resources :visitors
 
-
   resources :media
 
-
   resources :attractions
-
-
-  resources :tours do
-    resources :attractions
-  end
-  
-
-  resources :locations do
-    resources :tours do
-      resources :attractions
-    end
-  end
-
 
   resources :users
 

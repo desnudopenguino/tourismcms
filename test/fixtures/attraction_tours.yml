@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  attraction_id: 1
+  tour_id: 1
+  mediatype: 1
+  media: MyString
+
+two:
+  attraction_id: 1
+  tour_id: 1
+  mediatype: 1
+  media: MyString

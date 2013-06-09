@@ -1,0 +1,27 @@
+<h1>Listing venue_assets</h1>
+
+<table>
+  <tr>
+    <th>Venue</th>
+    <th>Type</th>
+    <th>Asset</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @venue_assets.each do |venue_asset| %>
+  <tr>
+    <td><%= venue_asset.venue_id %></td>
+    <td><%= venue_asset.type %></td>
+    <td><%= venue_asset.asset %></td>
+    <td><%= link_to 'Show', venue_asset %></td>
+    <td><%= link_to 'Edit', edit_venue_asset_path(venue_asset) %></td>
+    <td><%= link_to 'Destroy', venue_asset, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Venue asset', new_venue_asset_path %>

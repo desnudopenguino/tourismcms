@@ -2,7 +2,11 @@ class ToursController < ApplicationController
   # GET /tours
   # GET /tours.json
   def index
-    @tours = Venue.find(params[:venue_id]).tours
+    if(params.has_key?(:venue_id))
+      @tours = Venue.find(params[:venue_id]).tours
+    else
+      @tours = Tour.all
+    end
 
     respond_to do |format|
       format.html # index.html.erb
@@ -13,7 +17,6 @@ class ToursController < ApplicationController
   # GET /tours/1
   # GET /tours/1.json
   def show
-    @venue = Venue.find(params[:venue_id])
     @tour = Tour.find(params[:id])
 
     respond_to do |format|
