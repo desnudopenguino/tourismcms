@@ -2,8 +2,8 @@ class AttractionsController < ApplicationController
   # GET /attractions
   # GET /attractions.json
   def index
-      @attractions = Attraction.all
-
+      @attractions = Venue.find(params[:venue_id]).attractions
+      
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @attractions }
@@ -13,6 +13,7 @@ class AttractionsController < ApplicationController
   # GET /attractions/1
   # GET /attractions/1.json
   def show
+    @venue = Venue.find(params[:venue_id])
     @attraction = Attraction.find(params[:id])
 
     respond_to do |format|
@@ -24,8 +25,9 @@ class AttractionsController < ApplicationController
   # GET /attractions/new
   # GET /attractions/new.json
   def new
+    @venue = Venue.find(params[:venue_id])
     @attraction = Attraction.new
-
+    
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @attraction }
@@ -34,17 +36,20 @@ class AttractionsController < ApplicationController
 
   # GET /attractions/1/edit
   def edit
+    @venue = Venue.find(params[:venue_id])
     @attraction = Attraction.find(params[:id])
   end
 
   # POST /attractions
   # POST /attractions.json
   def create
+    @venue = Venue.find(params[:venue_id])
     @attraction = Attraction.new(params[:attraction])
-
+    @attraction.venue = @venue
+    
     respond_to do |format|
       if @attraction.save
-        format.html { redirect_to @attraction, notice: 'Attraction was successfully created.' }
+        format.html { redirect_to venue_attraction_path(@venue,@attraction), notice: 'Attraction was successfully created.' }
         format.json { render json: @attraction, status: :created, location: @attraction }
       else
         format.html { render action: "new" }
@@ -56,11 +61,12 @@ class AttractionsController < ApplicationController
   # PUT /attractions/1
   # PUT /attractions/1.json
   def update
+    @venue = Venue.find(params[:venue_id])
     @attraction = Attraction.find(params[:id])
 
     respond_to do |format|
       if @attraction.update_attributes(params[:attraction])
-        format.html { redirect_to @attraction, notice: 'Attraction was successfully updated.' }
+        format.html { redirect_to venue_attraction_path(@venue,@attraction), notice: 'Attraction was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

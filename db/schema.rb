@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130609213241) do
+ActiveRecord::Schema.define(:version => 20130609224121) do
 
   create_table "assets", :force => true do |t|
     t.integer  "venue_id"
@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(:version => 20130609213241) do
   end
 
   create_table "attractions", :force => true do |t|
-    t.integer  "tour_id"
+    t.integer  "venue_id"
     t.float    "latitude"
     t.float    "longitude"
     t.float    "radius"

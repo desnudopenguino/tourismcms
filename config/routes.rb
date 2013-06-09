@@ -13,7 +13,13 @@ Bct::Application.routes.draw do
   resources :visitors
 
   resources :media
-
+  
+  root :to => "venues#index"
+  
+  match '*path' => redirect('/')
+  
+  
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
