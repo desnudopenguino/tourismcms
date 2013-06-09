@@ -3,20 +3,16 @@ Bct::Application.routes.draw do
   resources :venues do
     resources :tours
     resources :assets
+    resources :attractions
   end
   
   resources :tours do
-   resources :attractions 
+    get 'attractions'
   end
 
   resources :visitors
 
   resources :media
-
-  resources :attractions
-
-  resources :users
-
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

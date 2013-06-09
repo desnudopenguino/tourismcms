@@ -19757,3 +19757,1268 @@ Served asset /visitors.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-09 15:50:26 -0400
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/venues/" for 127.0.0.1 at 2013-06-09 16:05:03 -0400
+Processing by VenuesController#index as HTML
+  [1m[35mVenue Load (18.0ms)[0m  SELECT "venues".* FROM "venues" 
+  Rendered venues/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 31ms (Views: 12.0ms | ActiveRecord: 18.0ms)
+
+
+Started GET "/assets/media.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:03 -0400
+Served asset /media.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attractions.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:03 -0400
+Served asset /attractions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:03 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:03 -0400
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:03 -0400
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:04 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:04 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venue_assets.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:04 -0400
+Served asset /venue_assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venues.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:04 -0400
+Served asset /venues.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/visitors.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:04 -0400
+Served asset /visitors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:04 -0400
+Served asset /tours.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:04 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:04 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:04 -0400
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attractions.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:04 -0400
+Served asset /attractions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:04 -0400
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/media.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:04 -0400
+Served asset /media.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tours.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:04 -0400
+Served asset /tours.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:04 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venue_assets.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:04 -0400
+Served asset /venue_assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venues.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:04 -0400
+Served asset /venues.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/visitors.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:04 -0400
+Served asset /visitors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:05 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/venues/1" for 127.0.0.1 at 2013-06-09 16:05:09 -0400
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVenue Load (18.0ms)[0m  [1mSELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered venues/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 10.0ms | ActiveRecord: 18.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:10 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:10 -0400
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:10 -0400
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/media.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:10 -0400
+Served asset /media.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:10 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attractions.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:10 -0400
+Served asset /attractions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:10 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venue_assets.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:10 -0400
+Served asset /venue_assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venues.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:10 -0400
+Served asset /venues.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/visitors.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:10 -0400
+Served asset /visitors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:10 -0400
+Served asset /tours.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:10 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:10 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:11 -0400
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attractions.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:11 -0400
+Served asset /attractions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:11 -0400
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/media.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:11 -0400
+Served asset /media.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tours.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:11 -0400
+Served asset /tours.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:11 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venue_assets.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:11 -0400
+Served asset /venue_assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venues.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:11 -0400
+Served asset /venues.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/visitors.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:11 -0400
+Served asset /visitors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:11 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/venues/1/assets" for 127.0.0.1 at 2013-06-09 16:05:15 -0400
+Processing by AssetsController#index as HTML
+  Parameters: {"venue_id"=>"1"}
+  [1m[35mVenue Load (18.0ms)[0m  SELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mAsset Load (19.0ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE "assets"."venue_id" = 1[0m
+  [1m[35mVenue Load (18.0ms)[0m  SELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1[0m
+  Rendered assets/index.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 69ms (Views: 13.0ms | ActiveRecord: 55.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:15 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:15 -0400
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attractions.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:16 -0400
+Served asset /attractions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:16 -0400
+Served asset /locations.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:16 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/media.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:16 -0400
+Served asset /media.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:16 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venue_assets.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:16 -0400
+Served asset /venue_assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venues.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:16 -0400
+Served asset /venues.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/visitors.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:16 -0400
+Served asset /visitors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:16 -0400
+Served asset /tours.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:16 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:16 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attractions.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:16 -0400
+Served asset /attractions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:16 -0400
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:16 -0400
+Served asset /locations.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/media.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:16 -0400
+Served asset /media.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tours.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:16 -0400
+Served asset /tours.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:16 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venue_assets.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:17 -0400
+Served asset /venue_assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venues.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:17 -0400
+Served asset /venues.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/visitors.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:17 -0400
+Served asset /visitors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:17 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/venues/1/tours" for 127.0.0.1 at 2013-06-09 16:05:27 -0400
+Processing by ToursController#index as HTML
+  Parameters: {"venue_id"=>"1"}
+  [1m[35mVenue Load (18.0ms)[0m  SELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mTour Load (19.0ms)[0m  [1mSELECT "tours".* FROM "tours" WHERE "tours"."venue_id" = 1[0m
+  Rendered tours/index.html.erb within layouts/application (84.0ms)
+Completed 200 OK in 114ms (Views: 19.0ms | ActiveRecord: 94.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:28 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:28 -0400
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:28 -0400
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:28 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attractions.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:28 -0400
+Served asset /attractions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/media.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:28 -0400
+Served asset /media.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:28 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venue_assets.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:28 -0400
+Served asset /venue_assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venues.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:28 -0400
+Served asset /venues.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/visitors.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:28 -0400
+Served asset /visitors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:28 -0400
+Served asset /tours.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:28 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:28 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:28 -0400
+Served asset /assets.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/attractions.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:28 -0400
+Served asset /attractions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:28 -0400
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/media.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:28 -0400
+Served asset /media.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tours.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:28 -0400
+Served asset /tours.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:29 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venue_assets.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:29 -0400
+Served asset /venue_assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venues.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:29 -0400
+Served asset /venues.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/visitors.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:29 -0400
+Served asset /visitors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:29 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/tours/10" for 127.0.0.1 at 2013-06-09 16:05:31 -0400
+Processing by ToursController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mTour Load (51.0ms)[0m  SELECT "tours".* FROM "tours" WHERE "tours"."id" = $1 LIMIT 1  [["id", "10"]]
+  Rendered tours/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 80ms (Views: 28.0ms | ActiveRecord: 51.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:31 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:31 -0400
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attractions.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:31 -0400
+Served asset /attractions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/media.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:31 -0400
+Served asset /media.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:31 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:31 -0400
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:31 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venue_assets.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:31 -0400
+Served asset /venue_assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venues.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:32 -0400
+Served asset /venues.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/visitors.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:32 -0400
+Served asset /visitors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:32 -0400
+Served asset /tours.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:32 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:32 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:32 -0400
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attractions.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:32 -0400
+Served asset /attractions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:32 -0400
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/media.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:32 -0400
+Served asset /media.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tours.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:32 -0400
+Served asset /tours.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:32 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venue_assets.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:32 -0400
+Served asset /venue_assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venues.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:32 -0400
+Served asset /venues.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/visitors.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:32 -0400
+Served asset /visitors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:32 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/attractions" for 127.0.0.1 at 2013-06-09 16:05:57 -0400
+Processing by AttractionsController#index as HTML
+  [1m[36mAttraction Load (41.0ms)[0m  [1mSELECT "attractions".* FROM "attractions" [0m
+  Rendered attractions/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 129ms (Views: 25.0ms | ActiveRecord: 97.0ms)
+
+
+Started GET "/assets/media.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:58 -0400
+Served asset /media.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:58 -0400
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:58 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:58 -0400
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attractions.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:58 -0400
+Served asset /attractions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:58 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venue_assets.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:58 -0400
+Served asset /venue_assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:58 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venues.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:58 -0400
+Served asset /venues.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/visitors.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:58 -0400
+Served asset /visitors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2013-06-09 16:05:58 -0400
+Served asset /tours.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:58 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:58 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:58 -0400
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attractions.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:58 -0400
+Served asset /attractions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:58 -0400
+Served asset /locations.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/media.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:58 -0400
+Served asset /media.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tours.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:59 -0400
+Served asset /tours.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:59 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venue_assets.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:59 -0400
+Served asset /venue_assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venues.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:59 -0400
+Served asset /venues.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/visitors.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:59 -0400
+Served asset /visitors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-09 16:05:59 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/attractions" for 127.0.0.1 at 2013-06-09 16:07:07 -0400
+
+SyntaxError (f:/School/bct/config/routes.rb:77: syntax error, unexpected keyword_end, expecting $end):
+  activesupport (3.2.12) lib/active_support/dependencies.rb:245:in `load'
+  activesupport (3.2.12) lib/active_support/dependencies.rb:245:in `block in load'
+  activesupport (3.2.12) lib/active_support/dependencies.rb:236:in `load_dependency'
+  activesupport (3.2.12) lib/active_support/dependencies.rb:245:in `load'
+  railties (3.2.12) lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+  railties (3.2.12) lib/rails/application/routes_reloader.rb:40:in `each'
+  railties (3.2.12) lib/rails/application/routes_reloader.rb:40:in `load_paths'
+  railties (3.2.12) lib/rails/application/routes_reloader.rb:16:in `reload!'
+  railties (3.2.12) lib/rails/application/routes_reloader.rb:26:in `block in updater'
+  activesupport (3.2.12) lib/active_support/file_update_checker.rb:78:in `call'
+  activesupport (3.2.12) lib/active_support/file_update_checker.rb:78:in `execute'
+  activesupport (3.2.12) lib/active_support/file_update_checker.rb:86:in `execute_if_updated'
+  f:in `execute_if_updated'
+  railties (3.2.12) lib/rails/application/finisher.rb:68:in `block (2 levels) in <module:Finisher>'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:429:in `_run__111073032__prepare__260803387__callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:385:in `_run_prepare_callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.12) lib/action_dispatch/middleware/reloader.rb:74:in `prepare!'
+  actionpack (3.2.12) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  f:/Software/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  f:/Software/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  f:/Software/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered f:/Software/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered f:/Software/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+  Rendered f:/Software/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.0ms)
+
+
+Started GET "/attractions" for 127.0.0.1 at 2013-06-09 16:08:01 -0400
+
+ActionController::RoutingError (No route matches [GET] "/attractions"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  f:/Software/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  f:/Software/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  f:/Software/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered f:/Software/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/attractions" for 127.0.0.1 at 2013-06-09 16:08:29 -0400
+
+SyntaxError (f:/School/bct/config/routes.rb:76: syntax error, unexpected keyword_end, expecting $end):
+  activesupport (3.2.12) lib/active_support/dependencies.rb:245:in `load'
+  activesupport (3.2.12) lib/active_support/dependencies.rb:245:in `block in load'
+  activesupport (3.2.12) lib/active_support/dependencies.rb:236:in `load_dependency'
+  activesupport (3.2.12) lib/active_support/dependencies.rb:245:in `load'
+  railties (3.2.12) lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+  railties (3.2.12) lib/rails/application/routes_reloader.rb:40:in `each'
+  railties (3.2.12) lib/rails/application/routes_reloader.rb:40:in `load_paths'
+  railties (3.2.12) lib/rails/application/routes_reloader.rb:16:in `reload!'
+  railties (3.2.12) lib/rails/application/routes_reloader.rb:26:in `block in updater'
+  activesupport (3.2.12) lib/active_support/file_update_checker.rb:78:in `call'
+  activesupport (3.2.12) lib/active_support/file_update_checker.rb:78:in `execute'
+  activesupport (3.2.12) lib/active_support/file_update_checker.rb:86:in `execute_if_updated'
+  f:in `execute_if_updated'
+  railties (3.2.12) lib/rails/application/finisher.rb:68:in `block (2 levels) in <module:Finisher>'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:429:in `_run__111073032__prepare__260803387__callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:385:in `_run_prepare_callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.12) lib/action_dispatch/middleware/reloader.rb:74:in `prepare!'
+  actionpack (3.2.12) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  f:/Software/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  f:/Software/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  f:/Software/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered f:/Software/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered f:/Software/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered f:/Software/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/attractions" for 127.0.0.1 at 2013-06-09 16:08:50 -0400
+Processing by AttractionsController#index as HTML
+  [1m[35mAttraction Load (17.0ms)[0m  SELECT "attractions".* FROM "attractions" 
+  Rendered attractions/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 95ms (Views: 13.0ms | ActiveRecord: 73.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-09 16:08:50 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-06-09 16:08:50 -0400
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attractions.css?body=1" for 127.0.0.1 at 2013-06-09 16:08:50 -0400
+Served asset /attractions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-06-09 16:08:50 -0400
+Served asset /locations.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/media.css?body=1" for 127.0.0.1 at 2013-06-09 16:08:50 -0400
+Served asset /media.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-09 16:08:50 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-09 16:08:51 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venue_assets.css?body=1" for 127.0.0.1 at 2013-06-09 16:08:51 -0400
+Served asset /venue_assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venues.css?body=1" for 127.0.0.1 at 2013-06-09 16:08:51 -0400
+Served asset /venues.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/visitors.css?body=1" for 127.0.0.1 at 2013-06-09 16:08:51 -0400
+Served asset /visitors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2013-06-09 16:08:51 -0400
+Served asset /tours.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-09 16:08:51 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-09 16:08:51 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-06-09 16:08:51 -0400
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attractions.js?body=1" for 127.0.0.1 at 2013-06-09 16:08:51 -0400
+Served asset /attractions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-06-09 16:08:51 -0400
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/media.js?body=1" for 127.0.0.1 at 2013-06-09 16:08:51 -0400
+Served asset /media.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tours.js?body=1" for 127.0.0.1 at 2013-06-09 16:08:51 -0400
+Served asset /tours.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-09 16:08:51 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venue_assets.js?body=1" for 127.0.0.1 at 2013-06-09 16:08:51 -0400
+Served asset /venue_assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venues.js?body=1" for 127.0.0.1 at 2013-06-09 16:08:51 -0400
+Served asset /venues.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/visitors.js?body=1" for 127.0.0.1 at 2013-06-09 16:08:51 -0400
+Served asset /visitors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-09 16:08:51 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/venues/1" for 127.0.0.1 at 2013-06-09 17:03:11 -0400
+Connecting to database specified by database.yml
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVenue Load (55.0ms)[0m  [1mSELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered venues/show.html.erb within layouts/application (68.0ms)
+Completed 200 OK in 1166ms (Views: 914.1ms | ActiveRecord: 144.0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-06-09 17:03:19 -0400
+Served asset /locations.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/media.css?body=1" for 127.0.0.1 at 2013-06-09 17:03:19 -0400
+Served asset /media.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-09 17:03:19 -0400
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/attractions.css?body=1" for 127.0.0.1 at 2013-06-09 17:03:19 -0400
+Served asset /attractions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-06-09 17:03:19 -0400
+Served asset /assets.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-09 17:03:19 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-09 17:03:19 -0400
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/venue_assets.css?body=1" for 127.0.0.1 at 2013-06-09 17:03:19 -0400
+Served asset /venue_assets.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/venues.css?body=1" for 127.0.0.1 at 2013-06-09 17:03:19 -0400
+Served asset /venues.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/visitors.css?body=1" for 127.0.0.1 at 2013-06-09 17:03:19 -0400
+Served asset /visitors.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2013-06-09 17:03:19 -0400
+Served asset /tours.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-09 17:03:19 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-09 17:03:19 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-06-09 17:03:20 -0400
+Served asset /assets.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/attractions.js?body=1" for 127.0.0.1 at 2013-06-09 17:03:20 -0400
+Served asset /attractions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-06-09 17:03:20 -0400
+Served asset /locations.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/media.js?body=1" for 127.0.0.1 at 2013-06-09 17:03:20 -0400
+Served asset /media.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tours.js?body=1" for 127.0.0.1 at 2013-06-09 17:03:20 -0400
+Served asset /tours.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-09 17:03:20 -0400
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/venue_assets.js?body=1" for 127.0.0.1 at 2013-06-09 17:03:20 -0400
+Served asset /venue_assets.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/venues.js?body=1" for 127.0.0.1 at 2013-06-09 17:03:20 -0400
+Served asset /venues.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/visitors.js?body=1" for 127.0.0.1 at 2013-06-09 17:03:20 -0400
+Served asset /visitors.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-09 17:03:20 -0400
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/venues/1/tours" for 127.0.0.1 at 2013-06-09 17:07:00 -0400
+Processing by ToursController#index as HTML
+  Parameters: {"venue_id"=>"1"}
+  [1m[35mVenue Load (23.0ms)[0m  SELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mTour Load (19.0ms)[0m  [1mSELECT "tours".* FROM "tours" WHERE "tours"."venue_id" = 1[0m
+  Rendered tours/index.html.erb within layouts/application (137.0ms)
+Completed 200 OK in 424ms (Views: 117.0ms | ActiveRecord: 98.0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-06-09 17:07:00 -0400
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-09 17:07:00 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attractions.css?body=1" for 127.0.0.1 at 2013-06-09 17:07:00 -0400
+Served asset /attractions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/media.css?body=1" for 127.0.0.1 at 2013-06-09 17:07:00 -0400
+Served asset /media.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-06-09 17:07:00 -0400
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-09 17:07:00 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-09 17:07:00 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venue_assets.css?body=1" for 127.0.0.1 at 2013-06-09 17:07:00 -0400
+Served asset /venue_assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venues.css?body=1" for 127.0.0.1 at 2013-06-09 17:07:01 -0400
+Served asset /venues.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/visitors.css?body=1" for 127.0.0.1 at 2013-06-09 17:07:01 -0400
+Served asset /visitors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2013-06-09 17:07:01 -0400
+Served asset /tours.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-09 17:07:01 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-09 17:07:01 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-06-09 17:07:01 -0400
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attractions.js?body=1" for 127.0.0.1 at 2013-06-09 17:07:01 -0400
+Served asset /attractions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-06-09 17:07:01 -0400
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/media.js?body=1" for 127.0.0.1 at 2013-06-09 17:07:01 -0400
+Served asset /media.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tours.js?body=1" for 127.0.0.1 at 2013-06-09 17:07:01 -0400
+Served asset /tours.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-09 17:07:01 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venue_assets.js?body=1" for 127.0.0.1 at 2013-06-09 17:07:01 -0400
+Served asset /venue_assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venues.js?body=1" for 127.0.0.1 at 2013-06-09 17:07:01 -0400
+Served asset /venues.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/visitors.js?body=1" for 127.0.0.1 at 2013-06-09 17:07:01 -0400
+Served asset /visitors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-09 17:07:01 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/venues/1/assets" for 127.0.0.1 at 2013-06-09 17:07:30 -0400
+Processing by AssetsController#index as HTML
+  Parameters: {"venue_id"=>"1"}
+  [1m[35mVenue Load (18.0ms)[0m  SELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mAsset Load (18.0ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE "assets"."venue_id" = 1[0m
+  [1m[35mVenue Load (18.0ms)[0m  SELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1[0m
+  Rendered assets/index.html.erb within layouts/application (139.0ms)
+Completed 200 OK in 199ms (Views: 87.0ms | ActiveRecord: 110.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-09 17:07:30 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-06-09 17:07:30 -0400
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-09 17:07:30 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/media.css?body=1" for 127.0.0.1 at 2013-06-09 17:07:30 -0400
+Served asset /media.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-06-09 17:07:30 -0400
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attractions.css?body=1" for 127.0.0.1 at 2013-06-09 17:07:30 -0400
+Served asset /attractions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-09 17:07:30 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venue_assets.css?body=1" for 127.0.0.1 at 2013-06-09 17:07:30 -0400
+Served asset /venue_assets.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/venues.css?body=1" for 127.0.0.1 at 2013-06-09 17:07:31 -0400
+Served asset /venues.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/visitors.css?body=1" for 127.0.0.1 at 2013-06-09 17:07:31 -0400
+Served asset /visitors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2013-06-09 17:07:31 -0400
+Served asset /tours.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-09 17:07:31 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-09 17:07:31 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-06-09 17:07:31 -0400
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attractions.js?body=1" for 127.0.0.1 at 2013-06-09 17:07:31 -0400
+Served asset /attractions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-06-09 17:07:31 -0400
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/media.js?body=1" for 127.0.0.1 at 2013-06-09 17:07:31 -0400
+Served asset /media.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tours.js?body=1" for 127.0.0.1 at 2013-06-09 17:07:31 -0400
+Served asset /tours.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-09 17:07:31 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venue_assets.js?body=1" for 127.0.0.1 at 2013-06-09 17:07:31 -0400
+Served asset /venue_assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venues.js?body=1" for 127.0.0.1 at 2013-06-09 17:07:31 -0400
+Served asset /venues.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/visitors.js?body=1" for 127.0.0.1 at 2013-06-09 17:07:31 -0400
+Served asset /visitors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-09 17:07:31 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/venues/1/assets" for 127.0.0.1 at 2013-06-09 17:09:00 -0400
+Processing by AssetsController#index as HTML
+  Parameters: {"venue_id"=>"1"}
+  [1m[35mVenue Load (19.0ms)[0m  SELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mAsset Load (18.0ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE "assets"."venue_id" = 1[0m
+  [1m[35mVenue Load (19.0ms)[0m  SELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1[0m
+  Rendered assets/index.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 70ms (Views: 14.0ms | ActiveRecord: 56.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-09 17:09:00 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attractions.css?body=1" for 127.0.0.1 at 2013-06-09 17:09:00 -0400
+Served asset /attractions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2013-06-09 17:09:00 -0400
+Served asset /assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-06-09 17:09:00 -0400
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/media.css?body=1" for 127.0.0.1 at 2013-06-09 17:09:00 -0400
+Served asset /media.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-06-09 17:09:01 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-06-09 17:09:01 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venue_assets.css?body=1" for 127.0.0.1 at 2013-06-09 17:09:01 -0400
+Served asset /venue_assets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venues.css?body=1" for 127.0.0.1 at 2013-06-09 17:09:01 -0400
+Served asset /venues.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/visitors.css?body=1" for 127.0.0.1 at 2013-06-09 17:09:01 -0400
+Served asset /visitors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2013-06-09 17:09:01 -0400
+Served asset /tours.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-09 17:09:01 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-09 17:09:01 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2013-06-09 17:09:01 -0400
+Served asset /assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attractions.js?body=1" for 127.0.0.1 at 2013-06-09 17:09:01 -0400
+Served asset /attractions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-06-09 17:09:01 -0400
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/media.js?body=1" for 127.0.0.1 at 2013-06-09 17:09:01 -0400
+Served asset /media.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tours.js?body=1" for 127.0.0.1 at 2013-06-09 17:09:01 -0400
+Served asset /tours.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-06-09 17:09:01 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venue_assets.js?body=1" for 127.0.0.1 at 2013-06-09 17:09:01 -0400
+Served asset /venue_assets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/venues.js?body=1" for 127.0.0.1 at 2013-06-09 17:09:01 -0400
+Served asset /venues.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/visitors.js?body=1" for 127.0.0.1 at 2013-06-09 17:09:01 -0400
+Served asset /visitors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-09 17:09:01 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (18.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130416030143)
+Migrating to CreateLocations (20130416040144)
+Migrating to CreateTours (20130416040254)
+Migrating to CreateAttractions (20130416044708)
+Migrating to CreateMedia (20130416044755)
+Migrating to CreateVisitors (20130531153221)
+Migrating to CreateVenues (20130603140424)
+Migrating to AddVenueIdToTour (20130603143637)
+Migrating to CreateAttractionsTours (20130605153548)
+Migrating to CreateAttractionTours (20130605155228)
+Migrating to CreateVenueAssets (20130605161155)
+Migrating to CreateAssets (20130609191726)
+Migrating to FixAssetTypeColumnName (20130609192724)
+Migrating to CreateMultimediaPolymorphism (20130609213241)
+  [1m[35m (18.0ms)[0m  BEGIN
+  [1m[36m (33.0ms)[0m  [1mALTER TABLE "media" ADD COLUMN "multimedia_id" integer[0m
+  [1m[35m (18.0ms)[0m  ALTER TABLE "media" ADD COLUMN "multimedia_type" character varying(255)
+  [1m[36m (19.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130609213241')[0m
+  [1m[35m (17.0ms)[0m  COMMIT
+  [1m[36m (18.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml

@@ -2,15 +2,7 @@ class AttractionsController < ApplicationController
   # GET /attractions
   # GET /attractions.json
   def index
-    if(params.has_key?(:tour_id))
-      if(Tour.find(params[:tour_id]).attractions_tours.attractions)
-        @attractions = Tour.find(params[:tour_id]).attractions_tours.attractions
-      else
-        format.html { render action: "new" }
-      end
-    else
       @attractions = Attraction.all
-    end
 
     respond_to do |format|
       format.html # index.html.erb

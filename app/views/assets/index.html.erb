@@ -5,6 +5,7 @@
     <th>Venue</th>
     <th>Type</th>
     <th>Location (URL)</th>
+    <th>Image</th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,6 +16,7 @@
     <td><%= asset.venue_id %></td>
     <td><%= asset.assetType %></td>
     <td><%= asset.location %></td>
+    <td><%= image_tag asset.location %></td>
     <td><%= link_to 'Show', venue_asset_path(asset.venue,asset) %></td>
     <td><%= link_to 'Edit', edit_venue_asset_path(asset.venue,asset) %></td>
     <td><%= link_to 'Delete', venue_asset_path(asset.venue,asset), method: :delete, data: { confirm: 'Are you sure?' } %></td>
