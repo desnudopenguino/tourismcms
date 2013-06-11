@@ -87,4 +87,16 @@ class ToursController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  # GET /tours/1/attractions
+  # GET /tours/1/attractions.json
+  def attractions
+    @tour = Tour.find(params[:tour_id])
+    @attractions = @tour.attraction_tours
+
+    respond_to do |format|
+      format.html #attractions.html.erb
+      format.json { render json: @attractions }
+    end
+  end
 end

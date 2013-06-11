@@ -3,11 +3,13 @@
 one:
   attraction_id: 1
   tour_id: 1
-  mediatype: 1
-  media: MyString
+  radius: 1.5
+  description: MyString
+  order: 1
 
 two:
   attraction_id: 1
   tour_id: 1
-  mediatype: 1
-  media: MyString
+  radius: 1.5
+  description: MyString
+  order: 1

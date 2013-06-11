@@ -2,8 +2,6 @@
 
 <table>
   <tr>
-    <th>Id</th>
-    <th>Location</th>
     <th>Title</th>
     <th>Description</th>
     <th></th>
@@ -13,8 +11,6 @@
 
 <% @tours.each do |tour| %>
   <tr>
-    <td><%= tour.id %></td>
-    <td><%= tour.location_id %></td>
     <td><%= tour.title %></td>
     <td><%= tour.description %></td>
     <td><%= link_to 'Show', tour %></td>
