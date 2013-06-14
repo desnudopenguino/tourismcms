@@ -60,11 +60,12 @@ class TourVisitorsController < ApplicationController
   # PUT /tour_visitors/1
   # PUT /tour_visitors/1.json
   def update
+    @visitor = Visitor.find(params[:visitor_id])
     @tour_visitor = TourVisitor.find(params[:id])
 
     respond_to do |format|
       if @tour_visitor.update_attributes(params[:tour_visitor])
-        format.html { redirect_to @tour_visitor, notice: 'Tour visitor was successfully updated.' }
+        format.html { redirect_to visitor_tour_visitor_path(@visitor,@tour_visitor), notice: 'Tour visitor was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
