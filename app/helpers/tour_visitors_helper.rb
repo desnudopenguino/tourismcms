@@ -1,0 +1,2 @@
+module TourVisitorsHelper
+end

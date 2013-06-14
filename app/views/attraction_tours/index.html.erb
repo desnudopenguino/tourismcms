@@ -1,0 +1,31 @@
+<h1>Listing attraction_tours</h1>
+
+<table>
+  <tr>
+    <th>Attraction</th>
+    <th>Tour</th>
+    <th>Radius</th>
+    <th>Description</th>
+    <th>Order</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @attraction_tours.each do |attraction_tour| %>
+  <tr>
+    <td><%= attraction_tour.attraction_id %></td>
+    <td><%= attraction_tour.tour_id %></td>
+    <td><%= attraction_tour.radius %></td>
+    <td><%= attraction_tour.description %></td>
+    <td><%= attraction_tour.order %></td>
+    <td><%= link_to 'Show', attraction_tour %></td>
+    <td><%= link_to 'Edit', edit_attraction_tour_path(attraction_tour) %></td>
+    <td><%= link_to 'Destroy', attraction_tour, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Attraction tour', new_attraction_tour_path %>

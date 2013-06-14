@@ -1,0 +1,27 @@
+<h1>Listing tour_visitors</h1>
+
+<table>
+  <tr>
+    <th>Tour</th>
+    <th>Visitor</th>
+    <th>Progress</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tour_visitors.each do |tour_visitor| %>
+  <tr>
+    <td><%= tour_visitor.tour_id %></td>
+    <td><%= tour_visitor.visitor_id %></td>
+    <td><%= tour_visitor.progress %></td>
+    <td><%= link_to 'Show', visitor_tour_visitor_path(@visitor,tour_visitor) %></td>
+    <td><%= link_to 'Edit', edit_visitor_tour_visitor_path(@visitor,tour_visitor) %></td>
+    <td><%= link_to 'Destroy', visitor_tour_visitor_path(@visitor,tour_visitor), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tour visitor', new_visitor_tour_visitor_path(@visitor) %>

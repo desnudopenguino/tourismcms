@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Tour:</b>
+  <%= @tour_visitor.tour_id %>
+</p>
+
+<p>
+  <b>Visitor:</b>
+  <%= @tour_visitor.visitor_id %>
+</p>
+
+<p>
+  <b>Progress:</b>
+  <%= @tour_visitor.progress %>
+</p>
+
+
+<%= link_to 'Edit', edit_visitor_tour_visitor_path(@visitor,@tour_visitor) %> |
+<%= link_to 'Back', visitor_tour_visitors_path %>

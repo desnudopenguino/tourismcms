@@ -1,5 +1,6 @@
 Bct::Application.routes.draw do
 
+
   resources :venues do
     resources :tours
     resources :assets
@@ -7,10 +8,13 @@ Bct::Application.routes.draw do
   end
   
   resources :tours do
-    get 'attractions'
+    resources :attraction_tours
+    get "attractions"
   end
 
-  resources :visitors
+  resources :visitors do
+    resources :tour_visitors
+  end
 
   resources :media
   
