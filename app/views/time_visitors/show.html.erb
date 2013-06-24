@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Tour visitor:</b>
+  <%= @time_visitor.tour_visitor_id %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @time_visitor.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @time_visitor.longitude %>
+</p>
+
+
+<%= link_to 'Edit', edit_time_visitor_path(@time_visitor) %> |
+<%= link_to 'Back', time_visitors_path %>

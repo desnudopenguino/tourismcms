@@ -1,0 +1,25 @@
+<h1>Listing venue_visitors</h1>
+
+<table>
+  <tr>
+    <th>Venue</th>
+    <th>Visitor</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @venue_visitors.each do |venue_visitor| %>
+  <tr>
+    <td><%= venue_visitor.venue_id %></td>
+    <td><%= venue_visitor.visitor_id %></td>
+    <td><%= link_to 'Show', venue_visitor %></td>
+    <td><%= link_to 'Edit', edit_venue_visitor_path(venue_visitor) %></td>
+    <td><%= link_to 'Destroy', venue_visitor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Venue visitor', new_venue_visitor_path %>

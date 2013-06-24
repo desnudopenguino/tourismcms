@@ -11,51 +11,49 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130613224458) do
+ActiveRecord::Schema.define(:version => 20130624150834) do
 
   create_table "assets", :force => true do |t|
-    t.integer  "venue_id"
-    t.string   "assetType"
-    t.string   "location"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.integer "venue_id"
+    t.string  "assetType"
+    t.string  "location"
   end
 
   create_table "attraction_tours", :force => true do |t|
-    t.integer  "attraction_id"
-    t.integer  "tour_id"
-    t.float    "radius"
-    t.string   "description"
-    t.integer  "order"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.integer "attraction_id"
+    t.integer "tour_id"
+    t.float   "radius"
+    t.string  "description"
+    t.integer "order"
   end
 
   create_table "attractions", :force => true do |t|
-    t.integer  "venue_id"
-    t.float    "latitude"
-    t.float    "longitude"
-    t.float    "radius"
-    t.string   "title"
-    t.string   "description"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.integer "venue_id"
+    t.float   "latitude"
+    t.float   "longitude"
+    t.float   "radius"
+    t.string  "title"
+    t.string  "description"
   end
 
   create_table "media", :force => true do |t|
-    t.integer  "attraction_id"
-    t.string   "type"
-    t.string   "content"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
-    t.integer  "multimedia_id"
-    t.string   "multimedia_type"
+    t.integer "attraction_id"
+    t.string  "type"
+    t.string  "content"
+    t.integer "multimedia_id"
+    t.string  "multimedia_type"
   end
 
   create_table "progresses", :force => true do |t|
-    t.string   "level"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string "level"
+  end
+
+  create_table "time_visitors", :force => true do |t|
+    t.integer  "tour_visitor_id"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "tour_visitors", :force => true do |t|
@@ -67,24 +65,25 @@ ActiveRecord::Schema.define(:version => 20130613224458) do
   end
 
   create_table "tours", :force => true do |t|
-    t.string   "title"
-    t.string   "description"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.string  "title"
+    t.string  "description"
+    t.integer "venue_id"
+  end
+
+  create_table "venue_visitors", :force => true do |t|
     t.integer  "venue_id"
+    t.integer  "visitor_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "venues", :force => true do |t|
-    t.string   "name"
-    t.string   "description"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.string "name"
+    t.string "description"
   end
 
   create_table "visitors", :force => true do |t|
-    t.string   "oid"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string "oid"
   end
 
 end

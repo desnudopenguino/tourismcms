@@ -1,4 +1,5 @@
 class Visitor < ActiveRecord::Base
   attr_accessible :oid
-  has_many :tour_visitors
+
+  has_many :venue_visitors
 end

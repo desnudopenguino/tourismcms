@@ -1,0 +1,2 @@
+module VenueVisitorsHelper
+end

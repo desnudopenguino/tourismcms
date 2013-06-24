@@ -1,6 +1,5 @@
 Bct::Application.routes.draw do
 
-
   resources :venues do
     resources :tours
     resources :assets
@@ -14,8 +13,17 @@ Bct::Application.routes.draw do
 
   resources :visitors do
     resources :tour_visitors
+    resources :venue_visitors
   end
-
+  
+  resources :venue_visitors do
+    resources :tour_visitors
+  end
+  
+  resources :tour_visitors do
+    resources :time_visitors
+  end
+  
   resources :media
   
   root :to => "venues#index"

@@ -1,0 +1,27 @@
+<h1>Listing time_visitors</h1>
+
+<table>
+  <tr>
+    <th>Tour visitor</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @time_visitors.each do |time_visitor| %>
+  <tr>
+    <td><%= time_visitor.tour_visitor_id %></td>
+    <td><%= time_visitor.latitude %></td>
+    <td><%= time_visitor.longitude %></td>
+    <td><%= link_to 'Show', time_visitor %></td>
+    <td><%= link_to 'Edit', edit_time_visitor_path(time_visitor) %></td>
+    <td><%= link_to 'Destroy', time_visitor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Time visitor', new_time_visitor_path %>
