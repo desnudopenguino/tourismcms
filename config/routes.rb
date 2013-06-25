@@ -28,6 +28,8 @@ Bct::Application.routes.draw do
     resources :time_visitors
   end
   
+  resources :media
+  
   root :to => "venues#index"
   
   match '*path' => redirect('/')
