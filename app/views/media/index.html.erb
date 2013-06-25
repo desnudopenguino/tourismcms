@@ -2,7 +2,6 @@
 
 <table>
   <tr>
-    <th>Attraction</th>
     <th>Type</th>
     <th>Content</th>
     <th></th>
@@ -12,8 +11,7 @@
 
 <% @media.each do |medium| %>
   <tr>
-    <td><%= medium.attraction_id %></td>
-    <td><%= medium.type %></td>
+    <td><%= medium.media_type %></td>
     <td><%= medium.content %></td>
     <td><%= link_to 'Show', medium %></td>
     <td><%= link_to 'Edit', edit_medium_path(medium) %></td>
@@ -22,6 +20,18 @@
 <% end %>
 </table>
 
-<br />
+<h2>New Media</h2>
+<%= form_for([@multimedia, Medium.new]) do |f| %>
+  <div class="field">
+    <%= f.label :media_type %><br />
+    <%= f.text_field :media_type %>
+  </div>
+  <div class="field">
+    <%= f.label :content %><br />
+    <%= f.text_field :content %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
 
-<%= link_to 'New Medium', new_medium_path %>

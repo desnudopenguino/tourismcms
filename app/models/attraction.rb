@@ -3,5 +3,5 @@ class Attraction < ActiveRecord::Base
   
   belongs_to :venue
   has_many :attraction_tours
-  has_one :media, :as => :multimedia
+  has_many :media, :as => :multimedia
 end

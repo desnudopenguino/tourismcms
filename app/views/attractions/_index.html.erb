@@ -1,4 +1,4 @@
-<h1>Listing attractions</h1>
+<h2>Attractions</h2>
 
 <table>
   <tr>
@@ -19,9 +19,11 @@
     <td><%= attraction.radius %></td>
     <td><%= attraction.title %></td>
     <td><%= attraction.description %></td>
-    <td><%= link_to 'Show', attraction %></td>
+    <td><%= link_to 'Show', venue_attraction_path(attraction.venue_id,attraction) %></td>
     <td><%= link_to 'Edit', edit_venue_attraction_path(attraction.venue_id,attraction) %></td>
     <td><%= link_to 'Destroy', venue_attraction_path(attraction.venue_id,attraction), method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
+
+<br />

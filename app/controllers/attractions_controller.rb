@@ -2,7 +2,11 @@ class AttractionsController < ApplicationController
   # GET /attractions
   # GET /attractions.json
   def index
+    if(params.has_key?(:venue_id))
       @attractions = Venue.find(params[:venue_id]).attractions
+    else
+      @attractions = Attraction.all
+    end
       
     respond_to do |format|
       format.html # index.html.erb
@@ -13,7 +17,6 @@ class AttractionsController < ApplicationController
   # GET /attractions/1
   # GET /attractions/1.json
   def show
-    @venue = Venue.find(params[:venue_id])
     @attraction = Attraction.find(params[:id])
 
     respond_to do |format|

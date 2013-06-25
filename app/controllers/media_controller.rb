@@ -2,7 +2,8 @@ class MediaController < ApplicationController
   # GET /media
   # GET /media.json
   def index
-    @media = Medium.all
+    @multimedia = find_media
+    @media = @multimedia.media
 
     respond_to do |format|
       format.html # index.html.erb
@@ -40,17 +41,21 @@ class MediaController < ApplicationController
   # POST /media
   # POST /media.json
   def create
-    @medium = Medium.new(params[:medium])
+    @multimedia = find_media
+    #@medium = Medium.new(params[:medium])
+    @medium = @multimedia.media.build(params[:medium])
 
-    respond_to do |format|
+    #respond_to do |format|
       if @medium.save
-        format.html { redirect_to @medium, notice: 'Medium was successfully created.' }
-        format.json { render json: @medium, status: :created, location: @medium }
+        redirect_to :id => nil
+        #format.html { redirect_to @medium, notice: 'Medium was successfully created.' }
+        #format.json { render json: @medium, status: :created, location: @medium }
       else
-        format.html { render action: "new" }
-        format.json { render json: @medium.errors, status: :unprocessable_entity }
+        render :action => 'new'
+        # format.html { render action: "new" }
+        # format.json { render json: @medium.errors, status: :unprocessable_entity }
       end
-    end
+    #end
   end
 
   # PUT /media/1
@@ -79,5 +84,14 @@ class MediaController < ApplicationController
       format.html { redirect_to media_url }
       format.json { head :no_content }
     end
+  end
+  
+  def find_media
+    params.each do |name, value|
+      if name =~ /(.+)_id$/
+        return $1.classify.constantize.find(value)
+      end
+    end
+    nil
   end
 end

@@ -1,9 +1,5 @@
 <p id="notice"><%= notice %></p>
-
-<p>
-  <b>Name:</b>
-  <%= @venue.name %>
-</p>
+<h1><%= @venue.name %></h1>
 
 <p>
   <b>Description:</b>
@@ -16,3 +12,6 @@
 <%= link_to 'Tours', venue_tours_path(@venue)%> |
 <%= link_to 'Assets', venue_assets_path(@venue)%> |
 <%= link_to 'Attractions', venue_attractions_path(@venue)%>
+
+<%= render 'attractions/index'%>
+<%= render 'tours/index'%>

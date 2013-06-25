@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130624150834) do
+ActiveRecord::Schema.define(:version => 20130625183823) do
 
   create_table "assets", :force => true do |t|
     t.integer "venue_id"
@@ -37,8 +37,7 @@ ActiveRecord::Schema.define(:version => 20130624150834) do
   end
 
   create_table "media", :force => true do |t|
-    t.integer "attraction_id"
-    t.string  "type"
+    t.string  "media_type"
     t.string  "content"
     t.integer "multimedia_id"
     t.string  "multimedia_type"
