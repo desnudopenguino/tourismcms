@@ -15,13 +15,8 @@
     <td><%= time_visitor.tour_visitor_id %></td>
     <td><%= time_visitor.latitude %></td>
     <td><%= time_visitor.longitude %></td>
-    <td><%= link_to 'Show', time_visitor %></td>
-    <td><%= link_to 'Edit', edit_time_visitor_path(time_visitor) %></td>
-    <td><%= link_to 'Destroy', time_visitor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Show', tour_visitor_time_visitor_path(time_visitor.tour_visitor_id,time_visitor) %></td>
+    <td><%= link_to 'Destroy', tour_visitor_time_visitor_path(time_visitor.tour_visitor_id,time_visitor), method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'New Time visitor', new_time_visitor_path %>

@@ -7,7 +7,7 @@
 
 <p>
   <b>Visitor:</b>
-  <%= @tour_visitor.visitor_id %>
+  <%= @tour_visitor.venue_visitor_id %>
 </p>
 
 <p>
@@ -16,5 +16,4 @@
 </p>
 
 
-<%= link_to 'Edit', edit_visitor_tour_visitor_path(@visitor,@tour_visitor) %> |
-<%= link_to 'Back', visitor_tour_visitors_path %>
+<%= link_to 'Edit', edit_venue_visitor_tour_visitor_path(@tour_visitor.venue_visitor_id,@tour_visitor) %> |

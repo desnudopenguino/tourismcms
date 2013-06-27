@@ -1,23 +1,11 @@
-<%= form_for([@visitor,@tour_visitor]) do |f| %>
-  <% if @tour_visitor.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@tour_visitor.errors.count, "error") %> prohibited this tour_visitor from being saved:</h2>
-
-      <ul>
-      <% @tour_visitor.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
+<%= form_for([@venue_visitor,@tour_visitor]) do |f| %>
   <div class="field">
     <%= f.label :tour_id %><br />
     <%= f.number_field :tour_id %>
   </div>
   <div class="field">
-    <%= f.label :visitor_id %><br />
-    <%= f.number_field :visitor_id %>
+    <%= f.label :venue_visitor_id %><br />
+    <%= f.number_field :venue_visitor_id %>
   </div>
   <div class="field">
     <%= f.label :progress %><br />
