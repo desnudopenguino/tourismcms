@@ -19,13 +19,9 @@
     <td><%= attraction_tour.radius %></td>
     <td><%= attraction_tour.description %></td>
     <td><%= attraction_tour.order %></td>
-    <td><%= link_to 'Show', attraction_tour %></td>
-    <td><%= link_to 'Edit', edit_attraction_tour_path(attraction_tour) %></td>
-    <td><%= link_to 'Destroy', attraction_tour, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Show', tour_attraction_tour_path(attraction_tour.tour_id,attraction_tour) %></td>
+    <td><%= link_to 'Edit', edit_tour_attraction_tour_path(attraction_tour.tour_id,attraction_tour) %></td>
+    <td><%= link_to 'Destroy', tour_attraction_tour_path(attraction_tour.tour_id,attraction_tour), method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'New Attraction tour', new_attraction_tour_path %>
