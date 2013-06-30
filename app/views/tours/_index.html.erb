@@ -1,6 +1,6 @@
 <h2>Tours</h2>
 
-<table>
+<table class="table">
   <tr>
     <th>Title</th>
     <th>Description</th>
@@ -13,9 +13,9 @@
   <tr>
     <td><%= tour.title %></td>
     <td><%= tour.description %></td>
-    <td><%= link_to 'Show', tour %></td>
-    <td><%= link_to 'Edit', edit_tour_path(tour) %></td>
-    <td><%= link_to 'Destroy', tour, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Show', tour, :class => "btn btn-primary" %></td>
+    <td><%= link_to 'Edit', edit_tour_path(tour), :class => "btn btn-primary" %></td>
+    <td><%= link_to 'Destroy', tour, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %></td>
   </tr>
 <% end %>
 </table>

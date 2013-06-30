@@ -1,6 +1,6 @@
-<h1>Listing venues</h1>
+<h1>Venues</h1>
 
-<table>
+<table class="table">
   <tr>
     <th>Name</th>
     <th>Description</th>
@@ -13,9 +13,9 @@
   <tr>
     <td><%= venue.name %></td>
     <td><%= venue.description %></td>
-    <td><%= link_to 'Show', venue %></td>
-    <td><%= link_to 'Edit', edit_venue_path(venue) %></td>
-    <td><%= link_to 'Destroy', venue, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Show', venue, :class => "btn btn-primary" %></td>
+    <td><%= link_to 'Edit', edit_venue_path(venue), :class => "btn btn-primary" %></td>
+    <td><%= link_to 'Destroy', venue, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %></td>
   </tr>
 <% end %>
 </table>

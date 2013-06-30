@@ -1,10 +1,7 @@
 <h2>Attractions</h2>
 
-<table>
+<table class="table">
   <tr>
-    <th>Latitude</th>
-    <th>Longitude</th>
-    <th>Radius</th>
     <th>Title</th>
     <th>Description</th>
     <th></th>
@@ -14,14 +11,17 @@
 
 <% @attractions.each do |attraction| %>
   <tr>
-    <td><%= attraction.latitude %></td>
-    <td><%= attraction.longitude %></td>
-    <td><%= attraction.radius %></td>
     <td><%= attraction.title %></td>
     <td><%= attraction.description %></td>
-    <td><%= link_to 'Show', venue_attraction_path(attraction.venue_id,attraction) %></td>
-    <td><%= link_to 'Edit', edit_venue_attraction_path(attraction.venue_id,attraction) %></td>
-    <td><%= link_to 'Destroy', venue_attraction_path(attraction.venue_id,attraction), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Show', venue_attraction_path(attraction.venue_id,attraction), :class => "btn btn-primary" %></td>
+    <td><%= link_to edit_venue_attraction_path(attraction.venue_id,attraction), :class => "btn btn-primary" do %>
+        <i class="icon-pencil icon-white"></i>
+      <% end %>
+      </td>
+    <td><%= link_to venue_attraction_path(attraction.venue_id,attraction), method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" do %>
+      <i class="icon-remove icon-white"></i>
+    <% end %>
+    </td>
   </tr>
 <% end %>
 </table>
