@@ -1,25 +1,18 @@
-<h1>Venues</h1>
-
-<table class="table">
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
+<h1>Venues <%= link_to new_venue_path, :class => "btn btn-large" do %>
+  <i class="icon-plus"></i>
+  <% end %>
+</h1>
 <% @venues.each do |venue| %>
-  <tr>
-    <td><%= venue.name %></td>
-    <td><%= venue.description %></td>
-    <td><%= link_to 'Show', venue, :class => "btn btn-primary" %></td>
-    <td><%= link_to 'Edit', edit_venue_path(venue), :class => "btn btn-primary" %></td>
-    <td><%= link_to 'Destroy', venue, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %></td>
-  </tr>
+  <%= link_to venue do %>
+    <div class="venue span8">
+      <%= link_to venue, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger right" do %>
+        <i class="icon-remove icon-white"></i> 
+      <% end %>
+      <%= link_to edit_venue_path(venue), :class => "btn btn-primary right" do %>
+        <i class="icon-pencil icon-white"></i> 
+      <% end %>
+      <h2><%= venue.name %></h2>
+      <p><%= venue.description %></p>
+    </div>
+  <% end %>
 <% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Venue', new_venue_path %>

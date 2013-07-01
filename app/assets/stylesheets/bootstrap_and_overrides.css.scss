@@ -1,5 +1,27 @@
 @import "bootstrap";
 body { padding: 60px; }
 @import "bootstrap-responsive";
-a.btn { color:fff; }
-a.btn:visited { color:fff; }
+a.btn { color: fff; }
+a.btn:visited { color: fff; }
+
+a:hover div {
+  color: #000;
+}
+
+@mixin rounded($radius: 0.5em) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+div.venue {
+  padding: 5px;
+  border: 2px #000 solid;
+  margin-top: 10px;
+  @include rounded(10px)
+}
+
+.right {
+  float: right;
+  margin-left: 5px;
+}
