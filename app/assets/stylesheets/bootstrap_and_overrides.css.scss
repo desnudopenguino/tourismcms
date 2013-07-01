@@ -18,10 +18,22 @@ div.venue {
   padding: 5px;
   border: 2px #000 solid;
   margin-top: 10px;
-  @include rounded(10px)
+  @include rounded(10px);
+  background-color: #ccc;
 }
 
 .right {
   float: right;
   margin-left: 5px;
+}
+
+div#tours {
+}
+
+.tour {
+  padding:5px 10px;
+  background-color: #eee;
+  @include rounded(10px);
+  border: 2px #000 solid;
+  margin-bottom:10px;
 }

@@ -1,14 +1,20 @@
-<h1><%= @venue.name %></h1>
+<h1><%= @venue.name %>
+    <%= link_to edit_venue_path(@venue), :class => "btn btn-primary" do %>
+      <i class="icon-pencil icon-white"></i>
+    <% end %>
+    <%= link_to @venue, method: :delete, data: { confirm:'Are you sure?' }, :class => "btn btn-danger" do %>
+      <i class="icon-remove icon-white"></i>
+    <% end %>
+</h1>
+    <%= link_to 'Assets', venue_assets_path(@venue) %>
 <p>
   <%= @venue.description %>
 </p>
-    <%= link_to 'Edit', edit_venue_path(@venue), :class => "btn btn-primary" %>
-    <%= link_to 'Assets', venue_assets_path(@venue), :class => "btn btn-primary"%>
 <div class="row">
   <div class="span4">
     <%= render 'tours/index'%>
   </div>
-  <div class="span4">
+  <div class="span4" id="tour">
   </div>
   <div class="span4">
     <%= render 'attractions/index'%>

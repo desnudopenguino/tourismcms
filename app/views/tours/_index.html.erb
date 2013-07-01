@@ -1,23 +1,17 @@
-<h2>Tours</h2>
-
-<table class="table">
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @tours.each do |tour| %>
-  <tr>
-    <td><%= tour.title %></td>
-    <td><%= tour.description %></td>
-    <td><%= link_to 'Show', tour, :class => "btn btn-primary" %></td>
-    <td><%= link_to 'Edit', edit_tour_path(tour), :class => "btn btn-primary" %></td>
-    <td><%= link_to 'Destroy', tour, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
+<div id="tours">
+  <h2>Tours <%= link_to new_venue_tour_path(@venue), :class => "btn btn-success" do %>
+    <i class="icon-plus icon-white"></i> 
+   <% end %>
+  </h2>
+  <% @tours.each do |tour| %>
+    <div class="tour">
+      <%= link_to tour, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger right" do %>
+        <i class="icon-remove icon-white"></i> 
+      <% end %>
+      <%= link_to edit_tour_path(tour), :class => "btn btn-primary right" do %>
+        <i class="icon-pencil icon-white"></i> 
+      <% end %>
+      <h3><%= link_to tour.title, tour %></h3>
+    </div>
+  <% end %>
+</div>

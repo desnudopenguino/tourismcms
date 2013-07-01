@@ -51,7 +51,7 @@ class ToursController < ApplicationController
 
     respond_to do |format|
       if @tour.save
-        format.html { redirect_to venue_tour_path(@venue, @tour), notice: 'Tour was successfully created.' }
+        format.html { redirect_to venue_path(@venue), notice: 'Tour was successfully created.' }
         format.json { render json: @tour, status: :created, location: @tour }
       else
         format.html { render action: "new" }
@@ -80,10 +80,11 @@ class ToursController < ApplicationController
   # DELETE /tours/1.json
   def destroy
     @tour = Tour.find(params[:id])
+    @venue = @tour.venue
     @tour.destroy
 
     respond_to do |format|
-      format.html { redirect_to tours_url }
+      format.html { redirect_to venue_path(@venue) }
       format.json { head :no_content }
     end
   end
