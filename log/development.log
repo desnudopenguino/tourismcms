@@ -95484,3 +95484,1160 @@ Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
 
 Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2013-07-01 14:43:50 -0400
 Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started POST "/venues" for 127.0.0.1 at 2013-07-01 14:47:45 -0400
+Processing by VenuesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xgo3KpY6HeZFD0yKRwCy93fukRsf/0zSUBGsZguF3io=", "venue"=>{"name"=>"new tour", "description"=>"some new tour"}, "commit"=>"Create Venue"}
+  [1m[36m (19.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (18.9ms)[0m  INSERT INTO "venues" ("description", "name") VALUES ($1, $2) RETURNING "id"  [["description", "some new tour"], ["name", "new tour"]]
+  [1m[36m (20.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/venues
+Completed 302 Found in 65ms (ActiveRecord: 58.1ms)
+
+
+Started GET "/venues" for 127.0.0.1 at 2013-07-01 14:47:45 -0400
+Processing by VenuesController#index as HTML
+  [1m[35mVenue Load (18.9ms)[0m  SELECT "venues".* FROM "venues" 
+  Rendered venues/_form.html.erb (9.5ms)
+  Rendered venues/index.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 82ms (Views: 61.0ms | ActiveRecord: 18.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 14:47:45 -0400
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 14:47:46 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 14:47:46 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 14:47:46 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 14:47:46 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (133ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 14:47:46 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 14:47:46 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 14:47:46 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 14:47:46 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 14:47:46 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 14:47:46 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 14:47:46 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 14:47:46 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 14:47:46 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 14:47:46 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 14:47:46 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 14:47:46 -0400
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 14:47:46 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 14:47:46 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2013-07-01 14:47:46 -0400
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/venues/39" for 127.0.0.1 at 2013-07-01 14:57:04 -0400
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"39"}
+  [1m[36mVenue Load (18.8ms)[0m  [1mSELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1[0m  [["id", "39"]]
+  [1m[35mTour Load (18.7ms)[0m  SELECT "tours".* FROM "tours" WHERE "tours"."venue_id" = 39
+  Rendered tours/_index.html.erb (127.2ms)
+  [1m[36mAttraction Load (19.8ms)[0m  [1mSELECT "attractions".* FROM "attractions" WHERE "attractions"."venue_id" = 39[0m
+  Rendered attractions/_index.html.erb (122.5ms)
+  Rendered venues/show.html.erb within layouts/application (261.9ms)
+Completed 200 OK in 387ms (Views: 197.6ms | ActiveRecord: 184.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 14:57:04 -0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 14:57:05 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:05 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:05 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:05 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:05 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:05 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:05 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:05 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:05 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:05 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:05 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:05 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:05 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:05 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:05 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:05 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:05 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:05 -0400
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2013-07-01 14:57:05 -0400
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/venues/1" for 127.0.0.1 at 2013-07-01 14:57:27 -0400
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVenue Load (18.8ms)[0m  SELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mTour Load (194.5ms)[0m  [1mSELECT "tours".* FROM "tours" WHERE "tours"."venue_id" = 1[0m
+  Rendered tours/_index.html.erb (225.9ms)
+  [1m[35mAttraction Load (19.0ms)[0m  SELECT "attractions".* FROM "attractions" WHERE "attractions"."venue_id" = 1
+  Rendered attractions/_index.html.erb (147.1ms)
+  Rendered venues/show.html.erb within layouts/application (381.4ms)
+Completed 200 OK in 442ms (Views: 205.4ms | ActiveRecord: 232.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 14:57:28 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 14:57:28 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:28 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:28 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:28 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:28 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:28 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:28 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:28 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:28 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:28 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:28 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:28 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:29 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:29 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:29 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:29 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:29 -0400
+Served asset /bootstrap.js - 304 Not Modified (74ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 14:57:29 -0400
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/venues/1" for 127.0.0.1 at 2013-07-01 15:01:39 -0400
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVenue Load (18.9ms)[0m  [1mSELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mTour Load (19.6ms)[0m  SELECT "tours".* FROM "tours" WHERE "tours"."venue_id" = 1
+  Rendered tours/_index.html.erb (45.8ms)
+  Rendered venues/show.html.erb within layouts/application (55.4ms)
+Completed 500 Internal Server Error in 82ms
+
+ActionView::Template::Error (Missing partial tours/new with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/home/bucky/Workspaces/rails/bct/app/views"
+):
+    15: 
+    16: <div id="newTourModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    17: <% @tour = Tour.new %>
+    18: <%= render "tours/new" %>
+    19: </div>
+  app/views/tours/_index.html.erb:18:in `_app_views_tours__index_html_erb__2795238170325859557_34066900'
+  app/views/venues/show.html.erb:15:in `_app_views_venues_show_html_erb___1488821645563389316_70170642129640'
+  app/controllers/venues_controller.rb:20:in `show'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (25.0ms)
+
+
+Started GET "/venues/1" for 127.0.0.1 at 2013-07-01 15:02:05 -0400
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVenue Load (18.8ms)[0m  [1mSELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mTour Load (19.0ms)[0m  SELECT "tours".* FROM "tours" WHERE "tours"."venue_id" = 1
+  Rendered tours/_form.html.erb (9.4ms)
+  Rendered tours/_index.html.erb (43.1ms)
+  [1m[36mAttraction Load (18.8ms)[0m  [1mSELECT "attractions".* FROM "attractions" WHERE "attractions"."venue_id" = 1[0m
+  Rendered attractions/_index.html.erb (28.1ms)
+  Rendered venues/show.html.erb within layouts/application (78.4ms)
+Completed 200 OK in 140ms (Views: 76.3ms | ActiveRecord: 56.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 15:02:05 -0400
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 15:02:05 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (82ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:05 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:05 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:05 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:06 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:06 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:06 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:06 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:06 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:06 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:06 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:06 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:06 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:06 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:06 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:06 -0400
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:06 -0400
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:06 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started POST "/venues/1/tours" for 127.0.0.1 at 2013-07-01 15:02:20 -0400
+Processing by ToursController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xgo3KpY6HeZFD0yKRwCy93fukRsf/0zSUBGsZguF3io=", "tour"=>{"title"=>"another tour", "description"=>"this is another tour ya dummy"}, "commit"=>"Create Tour", "venue_id"=>"1"}
+  [1m[35mVenue Load (18.6ms)[0m  SELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36m (18.9ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (38.7ms)[0m  INSERT INTO "tours" ("description", "title", "venue_id") VALUES ($1, $2, $3) RETURNING "id"  [["description", "this is another tour ya dummy"], ["title", "another tour"], ["venue_id", 1]]
+  [1m[36m (19.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/venues/1
+Completed 302 Found in 119ms (ActiveRecord: 95.8ms)
+
+
+Started GET "/venues/1" for 127.0.0.1 at 2013-07-01 15:02:20 -0400
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVenue Load (18.7ms)[0m  SELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mTour Load (22.5ms)[0m  [1mSELECT "tours".* FROM "tours" WHERE "tours"."venue_id" = 1[0m
+  Rendered tours/_form.html.erb (7.2ms)
+  Rendered tours/_index.html.erb (48.1ms)
+  [1m[35mAttraction Load (18.8ms)[0m  SELECT "attractions".* FROM "attractions" WHERE "attractions"."venue_id" = 1
+  Rendered attractions/_index.html.erb (25.4ms)
+  Rendered venues/show.html.erb within layouts/application (85.6ms)
+Completed 200 OK in 147ms (Views: 82.3ms | ActiveRecord: 60.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 15:02:21 -0400
+Served asset /application.css - 304 Not Modified (50ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 15:02:21 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:21 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:21 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:21 -0400
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:21 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:22 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:22 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:22 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:22 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:22 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:22 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:22 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:22 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:22 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:22 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:22 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:22 -0400
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 15:02:22 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/venues/1" for 127.0.0.1 at 2013-07-01 15:05:43 -0400
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVenue Load (19.0ms)[0m  [1mSELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mTour Load (19.2ms)[0m  SELECT "tours".* FROM "tours" WHERE "tours"."venue_id" = 1
+  Rendered tours/_form.html.erb (6.6ms)
+  Rendered tours/_index.html.erb (38.7ms)
+  [1m[36mAttraction Load (18.7ms)[0m  [1mSELECT "attractions".* FROM "attractions" WHERE "attractions"."venue_id" = 1[0m
+  Rendered attractions/_form.html.erb (17.3ms)
+  Rendered attractions/_index.html.erb (49.8ms)
+  Rendered venues/show.html.erb within layouts/application (95.3ms)
+Completed 200 OK in 220ms (Views: 158.3ms | ActiveRecord: 56.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 15:05:44 -0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 15:05:44 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 15:05:44 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 15:05:44 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 15:05:44 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 15:05:44 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 15:05:44 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 15:05:44 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 15:05:44 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 15:05:44 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 15:05:44 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 15:05:44 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 15:05:44 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 15:05:44 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 15:05:44 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 15:05:44 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 15:05:44 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 15:05:44 -0400
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 15:05:44 -0400
+Served asset /application.js - 304 Not Modified (71ms)
+
+
+Started GET "/venues/1" for 127.0.0.1 at 2013-07-01 15:08:30 -0400
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVenue Load (19.1ms)[0m  SELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mTour Load (21.0ms)[0m  [1mSELECT "tours".* FROM "tours" WHERE "tours"."venue_id" = 1[0m
+  Rendered tours/_form.html.erb (10.5ms)
+  Rendered tours/_index.html.erb (45.7ms)
+  [1m[35mAttraction Load (21.1ms)[0m  SELECT "attractions".* FROM "attractions" WHERE "attractions"."venue_id" = 1
+  Rendered attractions/_form.html.erb (10.3ms)
+  Rendered attractions/_index.html.erb (44.9ms)
+  Rendered venues/show.html.erb within layouts/application (98.2ms)
+Completed 200 OK in 157ms (Views: 90.7ms | ActiveRecord: 61.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 15:08:30 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 15:08:31 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 15:08:31 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 15:08:31 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 15:08:31 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 15:08:31 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 15:08:31 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 15:08:31 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 15:08:31 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 15:08:31 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 15:08:31 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 15:08:31 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 15:08:31 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 15:08:31 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 15:08:31 -0400
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 15:08:31 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 15:08:31 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 15:08:31 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 15:08:31 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started POST "/venues/1/attractions" for 127.0.0.1 at 2013-07-01 15:09:37 -0400
+Processing by AttractionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xgo3KpY6HeZFD0yKRwCy93fukRsf/0zSUBGsZguF3io=", "attraction"=>{"latitude"=>"243.4342", "longitude"=>"23.543", "radius"=>"5", "title"=>"mars", "description"=>"this is mars.  it's small and it's red."}, "commit"=>"Create Attraction", "venue_id"=>"1"}
+  [1m[36mVenue Load (18.8ms)[0m  [1mSELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (18.5ms)[0m  BEGIN
+  [1m[36mSQL (39.3ms)[0m  [1mINSERT INTO "attractions" ("description", "latitude", "longitude", "radius", "title", "venue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["description", "this is mars.  it's small and it's red."], ["latitude", 243.4342], ["longitude", 23.543], ["radius", 5.0], ["title", "mars"], ["venue_id", 1]]
+  [1m[35m (20.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/venues/1/attractions/36
+Completed 302 Found in 126ms (ActiveRecord: 96.8ms)
+
+
+Started GET "/venues/1/attractions/36" for 127.0.0.1 at 2013-07-01 15:09:37 -0400
+Processing by AttractionsController#show as HTML
+  Parameters: {"venue_id"=>"1", "id"=>"36"}
+  [1m[36mAttraction Load (18.8ms)[0m  [1mSELECT "attractions".* FROM "attractions" WHERE "attractions"."id" = $1 LIMIT 1[0m  [["id", "36"]]
+  Rendered attractions/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 62ms (Views: 38.5ms | ActiveRecord: 18.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 15:09:37 -0400
+Served asset /application.css - 304 Not Modified (107ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 15:09:37 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 15:09:37 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 15:09:37 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 15:09:37 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 15:09:37 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 15:09:37 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 15:09:37 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 15:09:37 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 15:09:37 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 15:09:37 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 15:09:37 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 15:09:37 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 15:09:38 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 15:09:38 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 15:09:38 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 15:09:38 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 15:09:38 -0400
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 15:09:38 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/venues/1" for 127.0.0.1 at 2013-07-01 15:10:19 -0400
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVenue Load (19.0ms)[0m  SELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mTour Load (18.6ms)[0m  [1mSELECT "tours".* FROM "tours" WHERE "tours"."venue_id" = 1[0m
+  Rendered tours/_form.html.erb (7.0ms)
+  Rendered tours/_index.html.erb (163.4ms)
+  [1m[35mAttraction Load (18.9ms)[0m  SELECT "attractions".* FROM "attractions" WHERE "attractions"."venue_id" = 1
+  Rendered attractions/_form.html.erb (13.5ms)
+  Rendered attractions/_index.html.erb (167.2ms)
+  Rendered venues/show.html.erb within layouts/application (339.8ms)
+Completed 200 OK in 479ms (Views: 217.0ms | ActiveRecord: 241.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 15:10:19 -0400
+Served asset /application.css - 304 Not Modified (133ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 15:10:20 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:20 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:20 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:20 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:20 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:20 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:20 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:20 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:20 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:20 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:20 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:20 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:20 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:20 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:20 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:20 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:20 -0400
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:20 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/venues/1" for 127.0.0.1 at 2013-07-01 15:10:30 -0400
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVenue Load (19.2ms)[0m  [1mSELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mTour Load (18.8ms)[0m  SELECT "tours".* FROM "tours" WHERE "tours"."venue_id" = 1
+  Rendered tours/_form.html.erb (6.7ms)
+  Rendered tours/_index.html.erb (153.1ms)
+  [1m[36mAttraction Load (19.2ms)[0m  [1mSELECT "attractions".* FROM "attractions" WHERE "attractions"."venue_id" = 1[0m
+  Rendered attractions/_form.html.erb (12.4ms)
+  Rendered attractions/_index.html.erb (157.8ms)
+  Rendered venues/show.html.erb within layouts/application (319.9ms)
+Completed 200 OK in 460ms (Views: 197.2ms | ActiveRecord: 237.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 15:10:31 -0400
+Served asset /application.css - 304 Not Modified (82ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 15:10:31 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:31 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:31 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:31 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:31 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:31 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:31 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:32 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:32 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:32 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:32 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:32 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:32 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:32 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:32 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:32 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:32 -0400
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 15:10:32 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started POST "/venues/1/attractions" for 127.0.0.1 at 2013-07-01 15:10:54 -0400
+Processing by AttractionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xgo3KpY6HeZFD0yKRwCy93fukRsf/0zSUBGsZguF3io=", "attraction"=>{"latitude"=>"43.2", "longitude"=>"43.4", "radius"=>"3", "title"=>"jupiter", "description"=>"boys go to jupiter to get more stupider"}, "commit"=>"Create Attraction", "venue_id"=>"1"}
+  [1m[35mVenue Load (18.9ms)[0m  SELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36m (18.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (19.1ms)[0m  INSERT INTO "attractions" ("description", "latitude", "longitude", "radius", "title", "venue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["description", "boys go to jupiter to get more stupider"], ["latitude", 43.2], ["longitude", 43.4], ["radius", 3.0], ["title", "jupiter"], ["venue_id", 1]]
+  [1m[36m (19.5ms)[0m  [1mCOMMIT[0m
+Completed 404 Not Found in 94ms
+
+ActionController::RoutingError (No route matches {:action=>"show", :controller=>"venues"}):
+  app/controllers/attractions_controller.rb:55:in `block (2 levels) in create'
+  app/controllers/attractions_controller.rb:53:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/venues/1/" for 127.0.0.1 at 2013-07-01 15:11:31 -0400
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVenue Load (23.0ms)[0m  SELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mTour Load (23.5ms)[0m  [1mSELECT "tours".* FROM "tours" WHERE "tours"."venue_id" = 1[0m
+  Rendered tours/_form.html.erb (7.2ms)
+  Rendered tours/_index.html.erb (162.1ms)
+  [1m[35mAttraction Load (19.9ms)[0m  SELECT "attractions".* FROM "attractions" WHERE "attractions"."venue_id" = 1
+  Rendered attractions/_form.html.erb (13.3ms)
+  Rendered attractions/_index.html.erb (171.3ms)
+  Rendered venues/show.html.erb within layouts/application (343.1ms)
+Completed 200 OK in 550ms (Views: 282.0ms | ActiveRecord: 248.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 15:11:32 -0400
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 15:11:32 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:32 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:32 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:32 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:32 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:32 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:32 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:32 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:32 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:32 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:32 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:32 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:32 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:32 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:32 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:32 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:32 -0400
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:32 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started POST "/venues/1/attractions" for 127.0.0.1 at 2013-07-01 15:11:55 -0400
+Processing by AttractionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xgo3KpY6HeZFD0yKRwCy93fukRsf/0zSUBGsZguF3io=", "attraction"=>{"latitude"=>"83.23", "longitude"=>"23.11", "radius"=>"8", "title"=>"mercury", "description"=>"it's hot!"}, "commit"=>"Create Attraction", "venue_id"=>"1"}
+  [1m[36mVenue Load (21.5ms)[0m  [1mSELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (18.6ms)[0m  BEGIN
+  [1m[36mSQL (19.5ms)[0m  [1mINSERT INTO "attractions" ("description", "latitude", "longitude", "radius", "title", "venue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["description", "it's hot!"], ["latitude", 83.23], ["longitude", 23.11], ["radius", 8.0], ["title", "mercury"], ["venue_id", 1]]
+  [1m[35m (19.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/venues/1
+Completed 302 Found in 109ms (ActiveRecord: 79.5ms)
+
+
+Started GET "/venues/1" for 127.0.0.1 at 2013-07-01 15:11:55 -0400
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVenue Load (19.2ms)[0m  [1mSELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mTour Load (18.8ms)[0m  SELECT "tours".* FROM "tours" WHERE "tours"."venue_id" = 1
+  Rendered tours/_form.html.erb (6.6ms)
+  Rendered tours/_index.html.erb (38.2ms)
+  [1m[36mAttraction Load (20.4ms)[0m  [1mSELECT "attractions".* FROM "attractions" WHERE "attractions"."venue_id" = 1[0m
+  Rendered attractions/_form.html.erb (11.2ms)
+  Rendered attractions/_index.html.erb (56.5ms)
+  Rendered venues/show.html.erb within layouts/application (165.8ms)
+Completed 200 OK in 223ms (Views: 160.3ms | ActiveRecord: 58.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 15:11:55 -0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 15:11:55 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:56 -0400
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:56 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:56 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:56 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:56 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:56 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:56 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:56 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:56 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:56 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:56 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:56 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:56 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:56 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:56 -0400
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:56 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:57 -0400
+Served asset /application.js - 304 Not Modified (4ms)
