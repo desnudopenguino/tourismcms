@@ -1,29 +1,16 @@
-<h2>Attractions</h2>
-
-<table class="table">
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<h2>Attractions <%= link_to new_venue_attraction_path(@venue), :class => "btn btn-success" do %>
+  <i class="icon-plus icon-white"></i> 
+  <% end %>
+</h2>
 
 <% @attractions.each do |attraction| %>
-  <tr>
-    <td><%= attraction.title %></td>
-    <td><%= attraction.description %></td>
-    <td><%= link_to 'Show', venue_attraction_path(attraction.venue_id,attraction), :class => "btn btn-primary" %></td>
-    <td><%= link_to edit_venue_attraction_path(attraction.venue_id,attraction), :class => "btn btn-primary" do %>
-        <i class="icon-pencil icon-white"></i>
-      <% end %>
-      </td>
-    <td><%= link_to venue_attraction_path(attraction.venue_id,attraction), method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" do %>
+  <div class="attraction">
+    <%= link_to venue_attraction_path(attraction.venue_id,attraction), method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger right" do %>
       <i class="icon-remove icon-white"></i>
     <% end %>
-    </td>
-  </tr>
+    <%= link_to edit_venue_attraction_path(attraction.venue_id,attraction), :class => "btn btn-primary right" do %>
+        <i class="icon-pencil icon-white"></i>
+    <% end %>
+    <h3><%= link_to attraction.title, venue_attraction_path(attraction.venue_id,attraction) %></h3>
+  </div>
 <% end %>
-</table>
-
-<br />

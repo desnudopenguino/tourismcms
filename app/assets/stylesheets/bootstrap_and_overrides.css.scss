@@ -30,10 +30,14 @@ div.venue {
 div#tours {
 }
 
-.tour {
+@mixin item {
   padding:5px 10px;
   background-color: #eee;
   @include rounded(10px);
   border: 2px #000 solid;
   margin-bottom:10px;
+}
+
+.tour, .attraction {
+  @include item;
 }
