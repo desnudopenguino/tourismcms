@@ -96641,3 +96641,2517 @@ Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 15:11:57 -0400
 Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/tours/1" for 127.0.0.1 at 2013-07-01 15:16:38 -0400
+Processing by ToursController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTour Load (203.2ms)[0m  SELECT "tours".* FROM "tours" WHERE "tours"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mVenue Load (19.1ms)[0m  [1mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1[0m
+  Rendered tours/show.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 282ms (Views: 54.4ms | ActiveRecord: 222.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 15:16:38 -0400
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 15:16:38 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (74ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:38 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:38 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:38 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:38 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:38 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:38 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:38 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:39 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:39 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:39 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:39 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:39 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:39 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:39 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:39 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:39 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:39 -0400
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/venues/1" for 127.0.0.1 at 2013-07-01 15:16:42 -0400
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVenue Load (19.0ms)[0m  SELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mTour Load (19.0ms)[0m  [1mSELECT "tours".* FROM "tours" WHERE "tours"."venue_id" = 1[0m
+  Rendered tours/_form.html.erb (6.5ms)
+  Rendered tours/_index.html.erb (36.8ms)
+  [1m[35mAttraction Load (19.1ms)[0m  SELECT "attractions".* FROM "attractions" WHERE "attractions"."venue_id" = 1
+  Rendered attractions/_form.html.erb (23.2ms)
+  Rendered attractions/_index.html.erb (66.9ms)
+  Rendered venues/show.html.erb within layouts/application (112.7ms)
+Completed 200 OK in 172ms (Views: 110.1ms | ActiveRecord: 57.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 15:16:43 -0400
+Served asset /application.css - 304 Not Modified (101ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 15:16:43 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:43 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:43 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:43 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:43 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:43 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:43 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:43 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:43 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:44 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:44 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:44 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:44 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:44 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:44 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:44 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:44 -0400
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:44 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/venues/1/attractions/1" for 127.0.0.1 at 2013-07-01 15:16:47 -0400
+Processing by AttractionsController#show as HTML
+  Parameters: {"venue_id"=>"1", "id"=>"1"}
+  [1m[36mAttraction Load (19.0ms)[0m  [1mSELECT "attractions".* FROM "attractions" WHERE "attractions"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered attractions/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 165ms (Views: 139.4ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 15:16:48 -0400
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 15:16:48 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:48 -0400
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:48 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:48 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:48 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:48 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:48 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:48 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:48 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:48 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:48 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:48 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:48 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:48 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:48 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:48 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:48 -0400
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:48 -0400
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/venues/1/assets" for 127.0.0.1 at 2013-07-01 15:16:58 -0400
+Processing by AssetsController#index as HTML
+  Parameters: {"venue_id"=>"1"}
+  [1m[35mVenue Load (272.7ms)[0m  SELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mAsset Load (24.2ms)[0m  [1mSELECT "assets".* FROM "assets" WHERE "assets"."venue_id" = 1[0m
+  [1m[35mVenue Load (28.3ms)[0m  SELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1[0m
+  Rendered assets/index.html.erb within layouts/application (260.7ms)
+Completed 200 OK in 580ms (Views: 184.0ms | ActiveRecord: 390.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 15:16:59 -0400
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 15:16:59 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:59 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:59 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:59 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:59 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:59 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:59 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:59 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:59 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:59 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:59 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:59 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:59 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:59 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:59 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:59 -0400
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:59 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 15:16:59 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/venues/1/edit" for 127.0.0.1 at 2013-07-01 15:17:07 -0400
+Processing by VenuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVenue Load (77.3ms)[0m  SELECT "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered venues/_form.html.erb (8.7ms)
+  Rendered venues/edit.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 131ms (Views: 47.5ms | ActiveRecord: 77.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 15:17:07 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 15:17:07 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 15:17:07 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 15:17:07 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 15:17:07 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 15:17:07 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 15:17:07 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 15:17:07 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 15:17:08 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 15:17:08 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 15:17:08 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 15:17:08 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 15:17:08 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 15:17:08 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 15:17:08 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 15:17:08 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 15:17:08 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 15:17:08 -0400
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 15:17:08 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/venues/" for 127.0.0.1 at 2013-07-01 15:31:31 -0400
+Processing by VenuesController#index as HTML
+  [1m[36mVenue Load (19.6ms)[0m  [1mSELECT "venues".* FROM "venues" [0m
+  Rendered venues/_form.html.erb (7.2ms)
+  Rendered venues/index.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 75ms (Views: 52.2ms | ActiveRecord: 19.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 15:31:31 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 15:31:32 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 15:31:32 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (79ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 15:31:32 -0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 15:31:32 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 15:31:32 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 15:31:32 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 15:31:32 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 15:31:32 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 15:31:32 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 15:31:32 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 15:31:32 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 15:31:32 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 15:31:32 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 15:31:32 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 15:31:32 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 15:31:32 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 15:31:32 -0400
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 15:31:32 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2013-07-01 15:31:32 -0400
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/venues/" for 127.0.0.1 at 2013-07-01 15:38:26 -0400
+Processing by VenuesController#index as HTML
+  [1m[35mVenue Load (19.2ms)[0m  SELECT "venues".* FROM "venues" 
+ERROR: compiling _app_views_venues__form_html_erb__2905589647347671063_70170538403940 RAISED /home/bucky/Workspaces/rails/bct/app/views/venues/_form.html.erb:22: syntax error, unexpected tSTRING_BEG, expecting ')'
+...nd= ( f.submit "Save", :class="btn btn-success");@output_buf...
+...                               ^
+Function body:           def _app_views_venues__form_html_erb__2905589647347671063_70170538403940(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "venues/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  <h3 id="myModalLabel">Modal header</h3>
+</div>
+<div class="modal-body">
+  ');@output_buffer.append=  form_for(@venue) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('    <div class="field">
+      ');@output_buffer.append= ( f.label :name );@output_buffer.safe_concat('<br />
+      ');@output_buffer.append= ( f.text_field :name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+    <div class="field">
+      ');@output_buffer.append= ( f.label :description );@output_buffer.safe_concat('<br />
+      ');@output_buffer.append= ( f.text_field :description );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+    <div class="actions">
+      ');@output_buffer.append= ( f.submit );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+');   end 
+@output_buffer.safe_concat('</div>
+<div class="modal-footer">
+  <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  ');@output_buffer.append= ( f.submit "Save", :class="btn btn-success");@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</div>
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `module_eval'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `compile'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:232:in `compile!'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:144:in `block in render'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:125:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:143:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:237:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:41:in `render_partial'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/home/bucky/Workspaces/rails/bct/app/views/venues/index.html.erb:20:in `_app_views_venues_index_html_erb__2123875799755622977_70170642218280'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:145:in `block in render'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:125:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:143:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:17:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:88:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:16:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/bucky/Workspaces/rails/bct/app/controllers/venues_controller.rb:7:in `index'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:167:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:414:in `_run__2377644316136037982__process_action__1275753871811423356__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:121:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:45:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal.rb:203:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal.rb:246:in `block in action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/var/lib/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/var/lib/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/var/lib/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:601:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/head.rb:14:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/query_cache.rb:64:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `_run__4247681082905499318__call__3291195550999884843__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/rack/logger.rb:32:in `call_app'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/tagged_logging.rb:22:in `tagged'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/static.rb:62:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/engine.rb:479:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/application.rb:223:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered venues/_form.html.erb (2.5ms)
+  Rendered venues/index.html.erb within layouts/application (14.8ms)
+Completed 500 Internal Server Error in 43ms
+
+ActionView::Template::Error (/home/bucky/Workspaces/rails/bct/app/views/venues/_form.html.erb:22: syntax error, unexpected tSTRING_BEG, expecting ')'
+...nd= ( f.submit "Save", :class="btn btn-success");@output_buf...
+...                               ^):
+    19: </div>
+    20: <div class="modal-footer">
+    21:   <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    22:   <%= f.submit "Save", :class="btn btn-success"%>
+    23: </div>
+  app/views/venues/index.html.erb:20:in `_app_views_venues_index_html_erb__2123875799755622977_70170642218280'
+  app/controllers/venues_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.0ms)
+
+
+Started GET "/venues/" for 127.0.0.1 at 2013-07-01 15:38:54 -0400
+Processing by VenuesController#index as HTML
+  [1m[36mVenue Load (19.9ms)[0m  [1mSELECT "venues".* FROM "venues" [0m
+  Rendered venues/_form.html.erb (38.7ms)
+  Rendered venues/index.html.erb within layouts/application (52.2ms)
+Completed 500 Internal Server Error in 81ms
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x0000000424fe60>:0x007fa3bc1fe818>):
+    19: </div>
+    20: <div class="modal-footer">
+    21:   <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    22:   <%= f.submit "Save", :class => "btn btn-success"%>
+    23: </div>
+  app/views/venues/_form.html.erb:22:in `_app_views_venues__form_html_erb__2905589647347671063_70170606423900'
+  app/views/venues/index.html.erb:20:in `_app_views_venues_index_html_erb__2123875799755622977_70170642218280'
+  app/controllers/venues_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.7ms)
+
+
+Started GET "/venues/" for 127.0.0.1 at 2013-07-01 15:39:35 -0400
+Processing by VenuesController#index as HTML
+  [1m[35mVenue Load (19.0ms)[0m  SELECT "venues".* FROM "venues" 
+  Rendered venues/_form.html.erb (7.7ms)
+  Rendered venues/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 71ms (Views: 47.2ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 15:39:35 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 15:39:35 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 15:39:35 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 15:39:35 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 15:39:35 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 15:39:35 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 15:39:35 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 15:39:35 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 15:39:35 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (86ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 15:39:35 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 15:39:35 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 15:39:35 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 15:39:35 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 15:39:35 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 15:39:35 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 15:39:35 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 15:39:35 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 15:39:36 -0400
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 15:39:36 -0400
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/venues/" for 127.0.0.1 at 2013-07-01 15:40:09 -0400
+Processing by VenuesController#index as HTML
+  [1m[36mVenue Load (18.8ms)[0m  [1mSELECT "venues".* FROM "venues" [0m
+  Rendered venues/_form.html.erb (7.5ms)
+  Rendered venues/index.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 72ms (Views: 49.3ms | ActiveRecord: 18.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 15:40:09 -0400
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 15:40:09 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (92ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:10 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:10 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:10 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:10 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:10 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:10 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:10 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:10 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:10 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:10 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:10 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:10 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:10 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:10 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:10 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:10 -0400
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:10 -0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/venues/" for 127.0.0.1 at 2013-07-01 15:40:29 -0400
+Processing by VenuesController#index as HTML
+  [1m[35mVenue Load (22.9ms)[0m  SELECT "venues".* FROM "venues" 
+  Rendered venues/_form.html.erb (6.9ms)
+  Rendered venues/index.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 79ms (Views: 51.2ms | ActiveRecord: 22.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 15:40:30 -0400
+Served asset /application.css - 304 Not Modified (119ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 15:40:30 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:30 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:30 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:30 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:30 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:30 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:30 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:30 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:30 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:30 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:30 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:30 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:30 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:30 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:30 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:30 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:31 -0400
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:31 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started POST "/venues" for 127.0.0.1 at 2013-07-01 15:40:44 -0400
+Processing by VenuesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xgo3KpY6HeZFD0yKRwCy93fukRsf/0zSUBGsZguF3io=", "venue"=>{"name"=>"another venue", "description"=>"venuevenue venue"}, "commit"=>"Save"}
+  [1m[36m (18.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (20.0ms)[0m  INSERT INTO "venues" ("description", "name") VALUES ($1, $2) RETURNING "id"  [["description", "venuevenue venue"], ["name", "another venue"]]
+  [1m[36m (20.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/venues
+Completed 302 Found in 70ms (ActiveRecord: 59.0ms)
+
+
+Started GET "/venues" for 127.0.0.1 at 2013-07-01 15:40:44 -0400
+Processing by VenuesController#index as HTML
+  [1m[35mVenue Load (18.8ms)[0m  SELECT "venues".* FROM "venues" 
+  Rendered venues/_form.html.erb (4.6ms)
+  Rendered venues/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 173ms (Views: 151.6ms | ActiveRecord: 18.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 15:40:45 -0400
+Served asset /application.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 15:40:45 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:45 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:45 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:45 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:45 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:45 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:45 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:45 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:45 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:45 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:45 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:45 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:45 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:45 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:45 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:45 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:46 -0400
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 15:40:46 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/venues" for 127.0.0.1 at 2013-07-01 15:48:12 -0400
+Processing by VenuesController#index as HTML
+  [1m[36mVenue Load (18.7ms)[0m  [1mSELECT "venues".* FROM "venues" [0m
+  Rendered venues/_form.html.erb (6.6ms)
+  Rendered venues/index.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 134ms (Views: 111.0ms | ActiveRecord: 18.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 15:48:12 -0400
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 15:48:13 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 15:48:13 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 15:48:13 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 15:48:13 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 15:48:13 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 15:48:13 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 15:48:13 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 15:48:13 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 15:48:13 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 15:48:13 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 15:48:13 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 15:48:13 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 15:48:13 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 15:48:13 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 15:48:13 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 15:48:13 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 15:48:13 -0400
+Served asset /bootstrap.js - 304 Not Modified (73ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 15:48:13 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/venues" for 127.0.0.1 at 2013-07-01 15:48:15 -0400
+Processing by VenuesController#index as HTML
+  [1m[35mVenue Load (19.2ms)[0m  SELECT "venues".* FROM "venues" 
+  Rendered venues/_form.html.erb (4.5ms)
+  Rendered venues/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 72ms (Views: 49.1ms | ActiveRecord: 19.2ms)
+
+
+Started GET "/venues" for 127.0.0.1 at 2013-07-01 15:55:47 -0400
+Processing by VenuesController#index as HTML
+  [1m[36mVenue Load (18.6ms)[0m  [1mSELECT "venues".* FROM "venues" [0m
+  Rendered venues/_form.html.erb (6.7ms)
+  Rendered venues/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 68ms (Views: 46.3ms | ActiveRecord: 18.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 15:55:47 -0400
+Served asset /application.css - 304 Not Modified (82ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 15:55:47 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 15:55:47 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 15:55:47 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 15:55:47 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 15:55:47 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 15:55:47 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 15:55:47 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 15:55:47 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 15:55:47 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 15:55:47 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 15:55:47 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 15:55:47 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 15:55:48 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 15:55:48 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 15:55:48 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 15:55:48 -0400
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 15:55:48 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 15:55:48 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/venues" for 127.0.0.1 at 2013-07-01 15:58:50 -0400
+Processing by VenuesController#index as HTML
+  [1m[35mVenue Load (19.1ms)[0m  SELECT "venues".* FROM "venues" 
+ERROR: compiling _app_views_venues__form_html_erb__2905589647347671063_70170437763260 RAISED /home/bucky/Workspaces/rails/bct/app/views/venues/_form.html.erb:18: syntax error, unexpected ',', expecting ')'
+...ppend= ( content_tag  (:button, :type => :submit, "Save", :c...
+...                               ^
+/home/bucky/Workspaces/rails/bct/app/views/venues/_form.html.erb:18: syntax error, unexpected ',', expecting ')'
+...tton, :type => :submit, "Save", :class => "btn btn-success" ...
+...                               ^
+Function body:           def _app_views_venues__form_html_erb__2905589647347671063_70170437763260(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "venues/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  <h3 id="myModalLabel">Create Venue</h3>
+</div>
+');@output_buffer.append=  form_for(@venue) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('<div class="modal-body">
+    <div class="field">
+      ');@output_buffer.append= ( f.label :name );@output_buffer.safe_concat('<br />
+      ');@output_buffer.append= ( f.text_field :name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+    <div class="field">
+      ');@output_buffer.append= ( f.label :description );@output_buffer.safe_concat('<br />
+      ');@output_buffer.append= ( f.text_field :description );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+</div>
+<div class="modal-footer">
+  <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  ');@output_buffer.append= ( content_tag  (:button, :type => :submit, "Save", :class => "btn btn-success" );@output_buffer.safe_concat('
+');
+@output_buffer.safe_concat('</div>
+'); end 
+@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `module_eval'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `compile'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:232:in `compile!'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:144:in `block in render'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:125:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:143:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:237:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:41:in `render_partial'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/home/bucky/Workspaces/rails/bct/app/views/venues/index.html.erb:17:in `_app_views_venues_index_html_erb__2123875799755622977_70170538546080'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:145:in `block in render'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:125:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:143:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:17:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:88:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:16:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/bucky/Workspaces/rails/bct/app/controllers/venues_controller.rb:7:in `index'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:167:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:414:in `_run__2377644316136037982__process_action__1275753871811423356__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:121:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:45:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal.rb:203:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal.rb:246:in `block in action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/var/lib/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/var/lib/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/var/lib/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:601:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/head.rb:14:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/query_cache.rb:64:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `_run__4247681082905499318__call__3291195550999884843__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/rack/logger.rb:32:in `call_app'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/tagged_logging.rb:22:in `tagged'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/static.rb:62:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/engine.rb:479:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/application.rb:223:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered venues/_form.html.erb (2.4ms)
+  Rendered venues/index.html.erb within layouts/application (17.7ms)
+Completed 500 Internal Server Error in 43ms
+
+ActionView::Template::Error (/home/bucky/Workspaces/rails/bct/app/views/venues/_form.html.erb:18: syntax error, unexpected ',', expecting ')'
+...ppend= ( content_tag  (:button, :type => :submit, "Save", :c...
+...                               ^
+/home/bucky/Workspaces/rails/bct/app/views/venues/_form.html.erb:18: syntax error, unexpected ',', expecting ')'
+...tton, :type => :submit, "Save", :class => "btn btn-success" ...
+...                               ^):
+    15: </div>
+    16: <div class="modal-footer">
+    17:   <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    18:   <%= content_tag  (:button, :type => :submit, "Save", :class => "btn btn-success" %>
+    19:   <%# f.submit "Save", :type => "button", :class => "btn btn-success" %>
+    20: </div>
+    21: <% end %>
+  app/views/venues/index.html.erb:17:in `_app_views_venues_index_html_erb__2123875799755622977_70170538546080'
+  app/controllers/venues_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.0ms)
+
+
+Started GET "/venues" for 127.0.0.1 at 2013-07-01 15:59:39 -0400
+Processing by VenuesController#index as HTML
+  [1m[36mVenue Load (19.0ms)[0m  [1mSELECT "venues".* FROM "venues" [0m
+ERROR: compiling _app_views_venues__form_html_erb__2905589647347671063_70170606635440 RAISED /home/bucky/Workspaces/rails/bct/app/views/venues/_form.html.erb:18: syntax error, unexpected ',', expecting ')'
+...ppend= ( content_tag  (:button, "Save", :type => :submit), :...
+...                               ^
+/home/bucky/Workspaces/rails/bct/app/views/venues/_form.html.erb:18: syntax error, unexpected ',', expecting ')'
+... content_tag  (:button, "Save", :type => :submit), :class =>...
+...                               ^
+/home/bucky/Workspaces/rails/bct/app/views/venues/_form.html.erb:18: syntax error, unexpected tASSOC, expecting keyword_end
+...", :type => :submit), :class => "btn btn-success" );@output_...
+...                               ^
+/home/bucky/Workspaces/rails/bct/app/views/venues/_form.html.erb:18: syntax error, unexpected ')', expecting keyword_end
+..., :class => "btn btn-success" );@output_buffer.safe_concat('
+...                               ^
+Function body:           def _app_views_venues__form_html_erb__2905589647347671063_70170606635440(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "venues/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  <h3 id="myModalLabel">Create Venue</h3>
+</div>
+');@output_buffer.append=  form_for(@venue) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('<div class="modal-body">
+    <div class="field">
+      ');@output_buffer.append= ( f.label :name );@output_buffer.safe_concat('<br />
+      ');@output_buffer.append= ( f.text_field :name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+    <div class="field">
+      ');@output_buffer.append= ( f.label :description );@output_buffer.safe_concat('<br />
+      ');@output_buffer.append= ( f.text_field :description );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+</div>
+<div class="modal-footer">
+  <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  ');@output_buffer.append= ( content_tag  (:button, "Save", :type => :submit), :class => "btn btn-success" );@output_buffer.safe_concat('
+');
+@output_buffer.safe_concat('</div>
+'); end 
+@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `module_eval'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `compile'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:232:in `compile!'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:144:in `block in render'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:125:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:143:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:237:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:41:in `render_partial'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/home/bucky/Workspaces/rails/bct/app/views/venues/index.html.erb:17:in `_app_views_venues_index_html_erb__2123875799755622977_70170538546080'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:145:in `block in render'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:125:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:143:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:17:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:88:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:16:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/bucky/Workspaces/rails/bct/app/controllers/venues_controller.rb:7:in `index'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:167:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:414:in `_run__2377644316136037982__process_action__1275753871811423356__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:121:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:45:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal.rb:203:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal.rb:246:in `block in action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/var/lib/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/var/lib/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/var/lib/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:601:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/head.rb:14:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/query_cache.rb:64:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `_run__4247681082905499318__call__3291195550999884843__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/rack/logger.rb:32:in `call_app'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/tagged_logging.rb:22:in `tagged'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/static.rb:62:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/engine.rb:479:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/application.rb:223:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered venues/_form.html.erb (2.6ms)
+  Rendered venues/index.html.erb within layouts/application (14.5ms)
+Completed 500 Internal Server Error in 42ms
+
+ActionView::Template::Error (/home/bucky/Workspaces/rails/bct/app/views/venues/_form.html.erb:18: syntax error, unexpected ',', expecting ')'
+...ppend= ( content_tag  (:button, "Save", :type => :submit), :...
+...                               ^
+/home/bucky/Workspaces/rails/bct/app/views/venues/_form.html.erb:18: syntax error, unexpected ',', expecting ')'
+... content_tag  (:button, "Save", :type => :submit), :class =>...
+...                               ^
+/home/bucky/Workspaces/rails/bct/app/views/venues/_form.html.erb:18: syntax error, unexpected tASSOC, expecting keyword_end
+...", :type => :submit), :class => "btn btn-success" );@output_...
+...                               ^
+/home/bucky/Workspaces/rails/bct/app/views/venues/_form.html.erb:18: syntax error, unexpected ')', expecting keyword_end
+..., :class => "btn btn-success" );@output_buffer.safe_concat('
+...                               ^):
+    15: </div>
+    16: <div class="modal-footer">
+    17:   <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    18:   <%= content_tag  (:button, "Save", :type => :submit), :class => "btn btn-success" %>
+    19:   <%# f.submit "Save", :type => "button", :class => "btn btn-success" %>
+    20: </div>
+    21: <% end %>
+  app/views/venues/index.html.erb:17:in `_app_views_venues_index_html_erb__2123875799755622977_70170538546080'
+  app/controllers/venues_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (66.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (80.9ms)
+
+
+Started GET "/venues" for 127.0.0.1 at 2013-07-01 16:00:54 -0400
+Processing by VenuesController#index as HTML
+  [1m[35mVenue Load (19.0ms)[0m  SELECT "venues".* FROM "venues" 
+ERROR: compiling _app_views_venues__form_html_erb__2905589647347671063_31689280 RAISED /home/bucky/Workspaces/rails/bct/app/views/venues/_form.html.erb:18: syntax error, unexpected ',', expecting ')'
+...ton, "Save", :type => :submit), :class => "btn btn-success" ...
+...                               ^
+Function body:           def _app_views_venues__form_html_erb__2905589647347671063_31689280(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "venues/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  <h3 id="myModalLabel">Create Venue</h3>
+</div>
+');@output_buffer.append=  form_for(@venue) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('<div class="modal-body">
+    <div class="field">
+      ');@output_buffer.append= ( f.label :name );@output_buffer.safe_concat('<br />
+      ');@output_buffer.append= ( f.text_field :name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+    <div class="field">
+      ');@output_buffer.append= ( f.label :description );@output_buffer.safe_concat('<br />
+      ');@output_buffer.append= ( f.text_field :description );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+</div>
+<div class="modal-footer">
+  <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  ');@output_buffer.append= ( content_tag(:button, "Save", :type => :submit), :class => "btn btn-success" );@output_buffer.safe_concat('
+');
+@output_buffer.safe_concat('</div>
+'); end 
+@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `module_eval'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `compile'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:232:in `compile!'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:144:in `block in render'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:125:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:143:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:237:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:41:in `render_partial'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/home/bucky/Workspaces/rails/bct/app/views/venues/index.html.erb:17:in `_app_views_venues_index_html_erb__2123875799755622977_70170538546080'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:145:in `block in render'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:125:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:143:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:17:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:88:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:16:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/bucky/Workspaces/rails/bct/app/controllers/venues_controller.rb:7:in `index'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:167:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:414:in `_run__2377644316136037982__process_action__1275753871811423356__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:121:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:45:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal.rb:203:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal.rb:246:in `block in action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/var/lib/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/var/lib/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/var/lib/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:601:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/head.rb:14:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/query_cache.rb:64:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `_run__4247681082905499318__call__3291195550999884843__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/rack/logger.rb:32:in `call_app'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/tagged_logging.rb:22:in `tagged'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/static.rb:62:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/engine.rb:479:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/application.rb:223:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered venues/_form.html.erb (2.2ms)
+  Rendered venues/index.html.erb within layouts/application (15.3ms)
+Completed 500 Internal Server Error in 44ms
+
+ActionView::Template::Error (/home/bucky/Workspaces/rails/bct/app/views/venues/_form.html.erb:18: syntax error, unexpected ',', expecting ')'
+...ton, "Save", :type => :submit), :class => "btn btn-success" ...
+...                               ^):
+    15: </div>
+    16: <div class="modal-footer">
+    17:   <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    18:   <%= content_tag(:button, "Save", :type => :submit), :class => "btn btn-success" %>
+    19:   <%# f.submit "Save", :type => "button", :class => "btn btn-success" %>
+    20: </div>
+    21: <% end %>
+  app/views/venues/index.html.erb:17:in `_app_views_venues_index_html_erb__2123875799755622977_70170538546080'
+  app/controllers/venues_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (24.7ms)
+
+
+Started GET "/venues" for 127.0.0.1 at 2013-07-01 16:01:09 -0400
+Processing by VenuesController#index as HTML
+  [1m[36mVenue Load (18.8ms)[0m  [1mSELECT "venues".* FROM "venues" [0m
+ERROR: compiling _app_views_venues__form_html_erb__2905589647347671063_70170644537380 RAISED /home/bucky/Workspaces/rails/bct/app/views/venues/_form.html.erb:18: syntax error, unexpected ':', expecting ')'
+...on, "Save", :type => :submit) :class => "btn btn-success" );...
+...                               ^
+Function body:           def _app_views_venues__form_html_erb__2905589647347671063_70170644537380(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "venues/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  <h3 id="myModalLabel">Create Venue</h3>
+</div>
+');@output_buffer.append=  form_for(@venue) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('<div class="modal-body">
+    <div class="field">
+      ');@output_buffer.append= ( f.label :name );@output_buffer.safe_concat('<br />
+      ');@output_buffer.append= ( f.text_field :name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+    <div class="field">
+      ');@output_buffer.append= ( f.label :description );@output_buffer.safe_concat('<br />
+      ');@output_buffer.append= ( f.text_field :description );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+</div>
+<div class="modal-footer">
+  <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  ');@output_buffer.append= ( content_tag(:button, "Save", :type => :submit) :class => "btn btn-success" );@output_buffer.safe_concat('
+');
+@output_buffer.safe_concat('</div>
+'); end 
+@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `module_eval'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `compile'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:232:in `compile!'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:144:in `block in render'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:125:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:143:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:237:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:41:in `render_partial'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/home/bucky/Workspaces/rails/bct/app/views/venues/index.html.erb:17:in `_app_views_venues_index_html_erb__2123875799755622977_70170538546080'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:145:in `block in render'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:125:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/template.rb:143:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:17:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:88:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:16:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/bucky/Workspaces/rails/bct/app/controllers/venues_controller.rb:7:in `index'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:167:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:414:in `_run__2377644316136037982__process_action__1275753871811423356__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:121:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:45:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal.rb:203:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal.rb:246:in `block in action'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/var/lib/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/var/lib/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/var/lib/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:601:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/head.rb:14:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/query_cache.rb:64:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `_run__4247681082905499318__call__3291195550999884843__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/rack/logger.rb:32:in `call_app'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/tagged_logging.rb:22:in `tagged'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/static.rb:62:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/engine.rb:479:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/application.rb:223:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/var/lib/gems/1.9.1/gems/railties-3.2.12/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered venues/_form.html.erb (2.1ms)
+  Rendered venues/index.html.erb within layouts/application (16.6ms)
+Completed 500 Internal Server Error in 44ms
+
+ActionView::Template::Error (/home/bucky/Workspaces/rails/bct/app/views/venues/_form.html.erb:18: syntax error, unexpected ':', expecting ')'
+...on, "Save", :type => :submit) :class => "btn btn-success" );...
+...                               ^):
+    15: </div>
+    16: <div class="modal-footer">
+    17:   <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    18:   <%= content_tag(:button, "Save", :type => :submit) :class => "btn btn-success" %>
+    19:   <%# f.submit "Save", :type => "button", :class => "btn btn-success" %>
+    20: </div>
+    21: <% end %>
+  app/views/venues/index.html.erb:17:in `_app_views_venues_index_html_erb__2123875799755622977_70170538546080'
+  app/controllers/venues_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.8ms)
+
+
+Started GET "/venues" for 127.0.0.1 at 2013-07-01 16:01:30 -0400
+Processing by VenuesController#index as HTML
+  [1m[35mVenue Load (20.3ms)[0m  SELECT "venues".* FROM "venues" 
+  Rendered venues/_form.html.erb (6.6ms)
+  Rendered venues/index.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 76ms (Views: 52.3ms | ActiveRecord: 20.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 16:01:31 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 16:01:31 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (92ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:31 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:31 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:31 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:31 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:31 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:31 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:31 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:31 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:31 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:31 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:31 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:31 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:31 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:31 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:31 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:31 -0400
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:31 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/venues" for 127.0.0.1 at 2013-07-01 16:01:39 -0400
+Processing by VenuesController#index as HTML
+  [1m[36mVenue Load (19.1ms)[0m  [1mSELECT "venues".* FROM "venues" [0m
+  Rendered venues/_form.html.erb (4.6ms)
+  Rendered venues/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 70ms (Views: 46.6ms | ActiveRecord: 19.1ms)
+
+
+Started POST "/venues" for 127.0.0.1 at 2013-07-01 16:01:50 -0400
+Processing by VenuesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xgo3KpY6HeZFD0yKRwCy93fukRsf/0zSUBGsZguF3io=", "venue"=>{"name"=>"pants", "description"=>"awesome"}}
+  [1m[35m (18.4ms)[0m  BEGIN
+  [1m[36mSQL (19.1ms)[0m  [1mINSERT INTO "venues" ("description", "name") VALUES ($1, $2) RETURNING "id"[0m  [["description", "awesome"], ["name", "pants"]]
+  [1m[35m (21.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/venues
+Completed 302 Found in 66ms (ActiveRecord: 59.2ms)
+
+
+Started GET "/venues" for 127.0.0.1 at 2013-07-01 16:01:50 -0400
+Processing by VenuesController#index as HTML
+  [1m[36mVenue Load (19.1ms)[0m  [1mSELECT "venues".* FROM "venues" [0m
+  Rendered venues/_form.html.erb (65.9ms)
+  Rendered venues/index.html.erb within layouts/application (87.6ms)
+Completed 200 OK in 138ms (Views: 116.2ms | ActiveRecord: 19.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 16:01:51 -0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 16:01:51 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:51 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:51 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:51 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:51 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:51 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:51 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:51 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:51 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:51 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:51 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:51 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:51 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:51 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:51 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:51 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:51 -0400
+Served asset /bootstrap.js - 304 Not Modified (65ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 16:01:51 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/venues" for 127.0.0.1 at 2013-07-01 16:02:29 -0400
+Processing by VenuesController#index as HTML
+  [1m[35mVenue Load (19.8ms)[0m  SELECT "venues".* FROM "venues" 
+  Rendered venues/_form.html.erb (4.5ms)
+  Rendered venues/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 72ms (Views: 47.4ms | ActiveRecord: 19.8ms)
+
+
+Started GET "/venues" for 127.0.0.1 at 2013-07-01 16:03:40 -0400
+Processing by VenuesController#index as HTML
+  [1m[36mVenue Load (18.5ms)[0m  [1mSELECT "venues".* FROM "venues" [0m
+  Rendered venues/_form.html.erb (6.8ms)
+  Rendered venues/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 79ms (Views: 58.2ms | ActiveRecord: 18.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 16:03:40 -0400
+Served asset /application.css - 304 Not Modified (126ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 16:03:40 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:40 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:40 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:40 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:40 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:40 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:40 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:40 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:40 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:40 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:40 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:40 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:40 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:40 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:40 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:40 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:41 -0400
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:41 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/venues" for 127.0.0.1 at 2013-07-01 16:03:57 -0400
+Processing by VenuesController#index as HTML
+  [1m[35mVenue Load (22.5ms)[0m  SELECT "venues".* FROM "venues" 
+  Rendered venues/_form.html.erb (4.6ms)
+  Rendered venues/index.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 140ms (Views: 112.7ms | ActiveRecord: 22.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 16:03:57 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 16:03:58 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:58 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:58 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:58 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:58 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:58 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:58 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:58 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:58 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:58 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:58 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:58 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:58 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:58 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:58 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:58 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:58 -0400
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 16:03:58 -0400
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/venues" for 127.0.0.1 at 2013-07-01 16:06:00 -0400
+Processing by VenuesController#index as HTML
+  [1m[36mVenue Load (18.6ms)[0m  [1mSELECT "venues".* FROM "venues" [0m
+  Rendered venues/_form.html.erb (6.7ms)
+  Rendered venues/index.html.erb within layouts/application (27.9ms)
+Compiled bootstrap_and_overrides.css  (3938ms)  (pid 19071)
+Compiled application.css  (2ms)  (pid 19071)
+Completed 200 OK in 4346ms (Views: 4324.4ms | ActiveRecord: 18.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 16:06:05 -0400
+Served asset /application.css - 304 Not Modified (54ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 16:06:05 -0400
+Served asset /bootstrap_and_overrides.css - 200 OK (92ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:05 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:05 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:05 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:05 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:05 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:05 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:05 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:05 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:05 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:05 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:05 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:05 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:05 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:05 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:05 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:05 -0400
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:05 -0400
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2013-07-01 16:06:05 -0400
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started POST "/venues" for 127.0.0.1 at 2013-07-01 16:06:18 -0400
+Processing by VenuesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xgo3KpY6HeZFD0yKRwCy93fukRsf/0zSUBGsZguF3io=", "venue"=>{"name"=>"aueueuoeau", "description"=>"uaop.upiepio"}}
+  [1m[35m (18.6ms)[0m  BEGIN
+  [1m[36mSQL (19.1ms)[0m  [1mINSERT INTO "venues" ("description", "name") VALUES ($1, $2) RETURNING "id"[0m  [["description", "uaop.upiepio"], ["name", "aueueuoeau"]]
+  [1m[35m (20.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/venues
+Completed 302 Found in 66ms (ActiveRecord: 57.8ms)
+
+
+Started GET "/venues" for 127.0.0.1 at 2013-07-01 16:06:18 -0400
+Processing by VenuesController#index as HTML
+  [1m[36mVenue Load (18.7ms)[0m  [1mSELECT "venues".* FROM "venues" [0m
+  Rendered venues/_form.html.erb (4.4ms)
+  Rendered venues/index.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 142ms (Views: 118.9ms | ActiveRecord: 18.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-01 16:06:18 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-01 16:06:18 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:18 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:18 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:18 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:18 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:18 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:18 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:18 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:18 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:18 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:18 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:18 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:18 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:18 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:18 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:18 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:18 -0400
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-01 16:06:19 -0400
+Served asset /application.js - 304 Not Modified (7ms)

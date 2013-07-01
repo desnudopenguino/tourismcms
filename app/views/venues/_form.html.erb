@@ -1,25 +1,21 @@
+<div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  <h3 id="myModalLabel">Create Venue</h3>
+</div>
 <%= form_for(@venue) do |f| %>
-  <% if @venue.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@venue.errors.count, "error") %> prohibited this venue from being saved:</h2>
-
-      <ul>
-      <% @venue.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+<div class="modal-body">
+    <div class="field">
+      <%= f.label :name %><br />
+      <%= f.text_field :name %>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_field :description %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <div class="field">
+      <%= f.label :description %><br />
+      <%= f.text_field :description %>
+    </div>
+</div>
+<div class="modal-footer">
+  <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  <%= content_tag(:button, "Save", :type => :submit, :class => "btn btn-success") %>
+  <%# f.submit "Save", :type => "button", :class => "btn btn-success" %>
+</div>
 <% end %>

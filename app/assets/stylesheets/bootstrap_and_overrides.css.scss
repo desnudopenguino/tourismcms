@@ -41,3 +41,8 @@ div#tours {
 .tour, .attraction {
   @include item;
 }
+
+
+.modal form {
+  margin-bottom:0;
+}
