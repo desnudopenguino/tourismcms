@@ -10,7 +10,7 @@ class ToursController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @tours }
+      format.json { render json: @tours.where('active = true') }
     end
   end
 

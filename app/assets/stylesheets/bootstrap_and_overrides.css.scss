@@ -4,30 +4,10 @@ body { padding: 60px; }
 a.btn { color: fff; }
 a.btn:visited { color: fff; }
 
-a:hover div {
-  color: #000;
-}
-
 @mixin rounded($radius: 0.5em) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
   border-radius: $radius;
-}
-
-div.venue {
-  padding: 5px;
-  border: 2px #000 solid;
-  margin-top: 10px;
-  @include rounded(10px);
-  background-color: #ccc;
-}
-
-.right {
-  float: right;
-  margin-left: 5px;
-}
-
-div#tours {
 }
 
 @mixin item {
@@ -38,17 +18,35 @@ div#tours {
   margin-bottom:10px;
 }
 
+a:hover div {
+  color: #000;
+}
+
+div.venue {
+  padding: 5px;
+  border: 2px #000 solid;
+  margin-top: 10px;
+  @include rounded(10px);
+  background-color: #ddd;
+}
+
+.right {
+  float: right;
+  margin-left: 5px;
+}
+
 .tour, .attraction {
   @include item;
 }
-
 
 .modal form {
   margin-bottom:0;
 }
 
-
 #tours-active {
+  height: 650px;
   background: asset-url("iphone.png", image);
   background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top:150px;
 }
