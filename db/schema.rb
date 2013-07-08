@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130626182955) do
+ActiveRecord::Schema.define(:version => 20130708043901) do
 
   create_table "assets", :force => true do |t|
     t.integer "venue_id"
@@ -67,6 +67,7 @@ ActiveRecord::Schema.define(:version => 20130626182955) do
     t.string  "title"
     t.string  "description"
     t.integer "venue_id"
+    t.boolean "active",      :default => false
   end
 
   create_table "venue_visitors", :force => true do |t|
@@ -77,8 +78,9 @@ ActiveRecord::Schema.define(:version => 20130626182955) do
   end
 
   create_table "venues", :force => true do |t|
-    t.string "name"
-    t.string "description"
+    t.string  "name"
+    t.string  "description"
+    t.boolean "active"
   end
 
   create_table "visitors", :force => true do |t|

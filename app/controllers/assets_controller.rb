@@ -2,7 +2,8 @@ class AssetsController < ApplicationController
   # GET /assets
   # GET /assets.json
   def index
-    @assets = Venue.find(params[:venue_id]).assets
+    @venue = Venue.find(params[:venue_id])
+    @assets = @venue.assets
 
     respond_to do |format|
       format.html # index.html.erb

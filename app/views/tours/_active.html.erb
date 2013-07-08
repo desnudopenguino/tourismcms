@@ -1,0 +1,10 @@
+  <% @active_tours.each do |tour| %>
+    <div class="tour">
+      <%= link_to tour, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger right" do %>
+        <i class="icon-remove icon-white"></i> 
+      <% end %>
+      <h3><%= link_to tour.title, tour %></h3>
+    </div>
+  <% end %>
+</div>
+

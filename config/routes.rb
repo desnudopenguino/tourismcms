@@ -32,7 +32,7 @@ Bct::Application.routes.draw do
   
   root :to => "venues#index"
   
-  match '*path' => redirect('/')
+  # match '*path' => redirect('/')
   
   
   

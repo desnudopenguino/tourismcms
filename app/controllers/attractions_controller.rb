@@ -3,7 +3,8 @@ class AttractionsController < ApplicationController
   # GET /attractions.json
   def index
     if(params.has_key?(:venue_id))
-      @attractions = Venue.find(params[:venue_id]).attractions
+      @venue = Venue.find(params[:venue_id])
+      @attractions = @venue.attractions
     else
       @attractions = Attraction.all
     end

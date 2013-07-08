@@ -6,17 +6,19 @@
       <i class="icon-remove icon-white"></i>
     <% end %>
 </h1>
-    <%= link_to 'Assets', venue_assets_path(@venue) %>
 <p>
   <%= @venue.description %>
 </p>
 <div class="row">
   <div class="span4">
-    <%= render 'tours/index'%>
+    <%= render 'tours/inactive'%>
   </div>
   <div class="span4" id="tour">
   </div>
-  <div class="span4">
-    <%= render 'attractions/index'%>
+  <div class="span4" id="tours-active">
+    <%= render 'tours/active'%>
   </div>
 </div>
+
+
+<%= link_to 'Manage Assets', venue_assets_path(@venue) %> | <%= link_to 'Manage Attractions', venue_attractions_path(@venue) %>
