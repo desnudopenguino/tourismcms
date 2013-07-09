@@ -3,4 +3,5 @@ class VenueVisitor < ActiveRecord::Base
   
   belongs_to :venue
   belongs_to :visitor
+  has_many :tour_visitors
 end

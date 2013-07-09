@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130708043901) do
+ActiveRecord::Schema.define(:version => 20130709163926) do
 
   create_table "assets", :force => true do |t|
     t.integer "venue_id"
@@ -56,11 +56,11 @@ ActiveRecord::Schema.define(:version => 20130708043901) do
   end
 
   create_table "tour_visitors", :force => true do |t|
-    t.integer  "tour_id"
     t.integer  "venue_visitor_id"
-    t.integer  "progress"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
+    t.integer  "tour_id",          :default => 0
+    t.integer  "progress",         :default => 0
   end
 
   create_table "tours", :force => true do |t|

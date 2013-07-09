@@ -41,12 +41,15 @@ class VisitorsController < ApplicationController
   # POST /visitors.json
   def create
     @visitor = Visitor.new(params[:visitor])
-    if(params.has_key?(:venue_visitor))
-      @venue_visitor = VenueVisitor.new(params[:venue_visitor])
-      @venue_visitor.save
-    end
     respond_to do |format|
       if @visitor.save
+        if(params.has_key?(:venue_visitor))
+          @venue_visitor = @visitor.venue_visitors.create(params[:venue_visitor])
+          if @venue_visitor.save
+            @tour_visitor = @venue_visitor.tour_visitors.create
+            @tour_visitor.save
+          end
+        end
         format.html { redirect_to @visitor, notice: 'Visitor was successfully created.' }
         format.json { render json: @visitor, status: :created, location: @visitor }
       else
