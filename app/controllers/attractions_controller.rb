@@ -22,7 +22,7 @@ class AttractionsController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @attraction }
+      format.json { render json: @attraction.to_json(:include => :media)}
     end
   end
 
