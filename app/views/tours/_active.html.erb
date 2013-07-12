@@ -1,10 +1,13 @@
+<ul class="media-list">
   <% @active_tours.each do |tour| %>
-    <div class="tour">
-      <%= link_to tour, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger right" do %>
-        <i class="icon-remove icon-white"></i> 
+    <li class="media">
+      <%= link_to tour, :class => "pull-left" do %>
+        <%= holder_tag 60 %>
       <% end %>
-      <h3><%= link_to tour.title, tour %></h3>
-    </div>
+      <div class="media-body">
+        <h4 class="media-heading"><%= tour.title %>
+        </h4>
+      </div>
+    </li>
   <% end %>
-</div>
-
+</ul>

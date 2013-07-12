@@ -30,11 +30,6 @@ div.venue {
   background-color: #ddd;
 }
 
-.right {
-  float: right;
-  margin-left: 5px;
-}
-
 .tour, .attraction {
   @include item;
 }
@@ -49,4 +44,10 @@ div.venue {
   background-repeat: no-repeat;
   background-size: 100%;
   padding-top:150px;
+}
+
+#tours-active li {
+  background-color: rgba(255,255,255,0.5);
+  margin-left: 50px;
+  margin-right: 50px;
 }

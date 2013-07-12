@@ -1,0 +1,19 @@
+<div id="tours">
+  <h2>Tours <a href="#newTourModal" role="button" class="btn btn-success" data-toggle="modal"><i class="icon-plus icon-white"></i></a></h2>
+  <% @tours.each do |tour| %>
+    <div class="tour">
+      <%= link_to tour, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger right" do %>
+        <i class="icon-remove icon-white"></i> 
+      <% end %>
+      <%= link_to edit_tour_path(tour), :class => "btn btn-primary right" do %>
+        <i class="icon-pencil icon-white"></i> 
+      <% end %>
+      <h3><%= link_to tour.title, tour %></h3>
+    </div>
+  <% end %>
+</div>
+
+<div id="newTourModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<% @tour = Tour.new %>
+<%= render "tours/form" %>
+</div>
