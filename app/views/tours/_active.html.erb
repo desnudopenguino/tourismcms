@@ -2,7 +2,7 @@
   <% @active_tours.each do |tour| %>
     <li class="media">
       <%= link_to tour, :class => "pull-left" do %>
-        <%= holder_tag 60 %>
+        <%= holder_tag '100x75' %>
       <% end %>
       <div class="media-body">
         <h4 class="media-heading"><%= tour.title %>

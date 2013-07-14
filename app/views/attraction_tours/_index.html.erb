@@ -1,0 +1,16 @@
+<h2>Tour Attractions:</h2>
+<ul class="media-list">
+<% @attraction_tours.each do |attraction_tour| %>
+  <li class="media">
+    <%= link_to attraction_tour, :class => "pull-left" do %>
+      <%= holder_tag '100x75' %>
+    <% end %>
+    <div class="media-body">
+      <h4 class="media-heading"><%= attraction_tour.attraction.title %></h4>
+      <div class="media">
+        <%= attraction_tour.attraction.description %>
+      </div>
+    </div>
+  </li>
+<% end %>
+</ul>

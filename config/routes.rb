@@ -30,6 +30,8 @@ Bct::Application.routes.draw do
   
   resources :media
   
+  resources :attraction_tours
+  
   root :to => "venues#index"
   
   # The priority is based upon order of creation:

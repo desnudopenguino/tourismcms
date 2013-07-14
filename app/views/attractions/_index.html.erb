@@ -1,18 +1,16 @@
-<h2>Attractions <a href="#newAttractionModal" role="button" class="btn btn-success" data-toggle="modal"><i class="icon-plus icon-white"></i></a></h2>
-
+<h2>Attractions:</h2>
+<ul class="media-list">
 <% @attractions.each do |attraction| %>
-  <div class="attraction">
-    <%= link_to venue_attraction_path(attraction.venue_id,attraction), method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger right" do %>
-      <i class="icon-remove icon-white"></i>
+  <li class="media">
+    <%= link_to attraction, :class => "pull-left" do %>
+      <%= holder_tag '100x75' %>
     <% end %>
-    <%= link_to edit_venue_attraction_path(attraction.venue_id,attraction), :class => "btn btn-primary right" do %>
-        <i class="icon-pencil icon-white"></i>
-    <% end %>
-    <h3><%= link_to attraction.title, venue_attraction_path(attraction.venue_id,attraction) %></h3>
-  </div>
+    <div class="media-body">
+      <h4 class="media-heading"><%= attraction.title %></h4>
+      <div class="media">
+        <%= attraction.description %>
+      </div>
+    </div>
+  </li>
 <% end %>
-
-<div id="newAttractionModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-<% @attraction = Attraction.new %>
-<%= render "attractions/form" %>
-</div>
+</ul>

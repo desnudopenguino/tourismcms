@@ -1,6 +1,17 @@
 <p><%= link_to @tour.venue.name, @tour.venue %> / <%= @tour.title %> 
-<h1><%= @tour.title %></h1>
+<h1><%= @tour.title %>
+<%= link_to [:edit, @tour], :class => "btn btn-info" do %><i class="icon-pencil icon-white"></i><% end %>
+<%= link_to  @tour, method: :delete, :class=> "btn btn-danger" do %><i class="icon-remove icon-white"></i><% end %>
+</h1>
 <p>
   <b>Description:</b>
   <%= @tour.description %>
 </p>
+<div class="row">
+  <div class="span4">
+    <%= render 'attraction_tours/index' %>
+  </div>
+  <div class="offset4 span4">
+    <%= render 'attractions/index' %>
+  </div>
+</div>

@@ -1,5 +1,5 @@
 <h1><%= @venue.name %>
-    <%= link_to edit_venue_path(@venue), :class => "btn btn-primary" do %>
+    <%= link_to edit_venue_path(@venue), :class => "btn btn-info" do %>
       <i class="icon-pencil icon-white"></i>
     <% end %>
     <%= link_to @venue, method: :delete, data: { confirm:'Are you sure?' }, :class => "btn btn-danger" do %>
@@ -13,7 +13,7 @@
   <div class="span4">
       <%= render 'tours/index'%>
   </div>
-  <div class=" offset4 span4" id="tours-active">
+  <div class=" offset3 span5" id="tours-active">
     <ul class="media-list">
       <%= render 'tours/active'%>
     </ul>

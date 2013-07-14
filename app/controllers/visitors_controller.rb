@@ -40,12 +40,17 @@ class VisitorsController < ApplicationController
   # POST /visitors
   # POST /visitors.json
   def create
-    @visitor = Visitor.new(params[:visitor])
-    @visitor.save
-    @venue_visitor = @visitor.venue_visitors.create(params[:venue_visitor])
-    @venue_visitor.save
-    respond_to do |format|
+    @visitor = Visitor.find_or_create_by_oid(params[:visitor][:oid] )
+    @venue_visitor = @visitor.venue_visitors.find_or_create_by_venue_id(params[:venue_visitor][:venue_id])#create(params[:venue_visitor])
+    # logic to check if progress is < 4
+    # if progress < 4 load that tour_visitor
+    # else create new tour visitor
+    if(@venue_visitor.tour_visitors.find_by_progress([0,1,2,3]))
+      @tour_visitor = @venue_visitor.tour_visitors.find_by_progress([0,1,2,3])
+    else
       @tour_visitor = @venue_visitor.tour_visitors.create
+    end
+    respond_to do |format|
       if @tour_visitor.save
         format.json { render json: @tour_visitor.to_json(:only => :id)  }
       end
