@@ -28,7 +28,9 @@ Bct::Application.routes.draw do
     resources :time_visitors
   end
   
-  resources :media
+  resources :media do
+    get 'fullindex'
+  end
   
   resources :attraction_tours
   

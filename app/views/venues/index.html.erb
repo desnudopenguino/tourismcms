@@ -1,17 +1,24 @@
 <h1>Venues <a href="#myModal" role="button" data-toggle="modal" class="btn btn-success"><i class="icon-plus icon-white"></i></a></h1>
+<ul class="media-list">
 <% @venues.each do |venue| %>
-  <div>
-    <%= link_to venue, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger right" do %>
-      <i class="icon-remove icon-white"></i><% end %>
-    <%= link_to edit_venue_path(venue), :class => "btn btn-info right" do %>
-      <i class="icon-pencil icon-white"></i><% end %>
-    <%= link_to venue, :class => "btn btn-primary right" do %>
-      <i class="icon-info-sign icon-white"></i><% end %>
-    <h2><%= venue.name %></h2>
-    <p><%= venue.description %></p>
-  </div>
+  <li class="media">
+    <%= link_to venue, :class => "pull-left" do%>
+      <% if venue.media.where(:media_type =>  "image") %>
+        <% venue_img = venue.media.find(:media_type == "image") %>
+        <%= image_tag venue_img.content %>
+      <% else %>
+        <%= holder_tag '100x75' %>
+      <% end %>
+    <% end %>
+    <div class="media-body">
+      <h4 class="media-heading"><%= venue.name %></h4>
+      <div class="">
+        <%= venue.description %>
+      </div>
+    </div>
+  </li>
 <% end %>
-
+</ul>
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <% @venue = Venue.new %>
   <%= render "venues/form" %>

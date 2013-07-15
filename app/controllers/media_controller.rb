@@ -95,3 +95,12 @@ class MediaController < ApplicationController
     nil
   end
 end
+
+  def fullindex
+    @media = Media.all 
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @media }
+    end
+  end
