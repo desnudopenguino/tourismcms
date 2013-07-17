@@ -90,4 +90,14 @@ class TourVisitorsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  # GET /tour_visitors/1/tour.json
+  def tour
+    @tour_visitor = TourVisitor.find(params[:id])
+    @tour = @tour_visitor. tour
+
+    respond_to do |format|
+      format.json { render json: @tour }
+    end
+  end
 end

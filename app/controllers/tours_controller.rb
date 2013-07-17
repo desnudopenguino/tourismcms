@@ -18,7 +18,7 @@ class ToursController < ApplicationController
   # GET /tours/1.json
   def show
     @tour = Tour.find(params[:id])
-    @attraction_tours = @tour.attraction_tours.order("order DESC")
+    @attraction_tours = @tour.attraction_tours.order("tour_order ASC")
     @attractions = @tour.venue.attractions
     respond_to do |format|
       format.html # show.html.erb

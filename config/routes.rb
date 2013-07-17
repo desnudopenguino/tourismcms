@@ -26,6 +26,9 @@ Bct::Application.routes.draw do
   
   resources :tour_visitors do
     resources :time_visitors
+    member do
+      get 'tour'
+    end
   end
   
   resources :media do

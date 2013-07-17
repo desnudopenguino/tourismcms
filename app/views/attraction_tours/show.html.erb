@@ -1,3 +1,4 @@
+<%= link_to @attraction_tour.attraction.venue do %><%= @attraction_tour.attraction.venue.name %><% end %> / <%= link_to @attraction_tour.tour do %><%= @attraction_tour.tour.title %><% end %> / <%= @attraction_tour.attraction.title %>
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -22,7 +23,7 @@
 
 <p>
   <b>Order:</b>
-  <%= @attraction_tour.order %>
+  <%= @attraction_tour.tour_order %>
 </p>
 
 
