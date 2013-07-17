@@ -6,7 +6,8 @@
       <%= holder_tag '100x75' %>
     <% end %>
     <div class="media-body">
-      <h4 class="media-heading"><%= attraction_tour.attraction.title %></h4>
+      <h4 class="media-heading"><%= attraction_tour.tour_order %>. <%= link_to tour_attraction_tour_path(@tour,attraction_tour), method: :delete, :class => "btn btn-danger pull-right" do %>
+        <i class="icon-trash icon-white"></i><% end %><%= attraction_tour.attraction.title %></h4>
       <div class="media">
         <%= attraction_tour.attraction.description %>
       </div>

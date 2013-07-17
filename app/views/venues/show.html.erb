@@ -2,7 +2,7 @@
     <%= link_to edit_venue_path(@venue), :class => "btn btn-info" do %>
       <i class="icon-pencil icon-white"></i>
     <% end %>
-    <%= link_to @venue, method: :delete, data: { confirm:'Are you sure?' }, :class => "btn btn-danger" do %>
+    <%= link_to @venue, method: :delete, :class => "btn btn-danger" do %>
       <i class="icon-remove icon-white"></i>
     <% end %>
 </h1>

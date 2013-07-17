@@ -1,5 +1,5 @@
 class Attraction < ActiveRecord::Base
-  attr_accessible :description, :latitude, :longitude, :radius, :title, :tour_id
+  attr_accessible :description, :latitude, :longitude, :title, :tour_id
   
   belongs_to :venue
   has_many :attraction_tours

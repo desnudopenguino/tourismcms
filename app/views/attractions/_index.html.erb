@@ -6,7 +6,9 @@
       <%= holder_tag '100x75' %>
     <% end %>
     <div class="media-body">
-      <h4 class="media-heading"><%= attraction.title %></h4>
+      <h4 class="media-heading"><%= link_to new_tour_attraction_tour_path(@tour,:attraction_id => attraction.id), :class => "btn btn-success pull-right" do %>
+        <i class="icon-share-alt icon-white"></i><% end %>
+        <%= attraction.title %></h4>
       <div class="media">
         <%= attraction.description %>
       </div>

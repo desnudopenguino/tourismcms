@@ -10,6 +10,10 @@ Bct::Application.routes.draw do
   resources :tours do
     resources :attraction_tours
     resources :media
+    member do
+      get 'activate'
+      get 'deactivate'
+    end
   end
   
   resources :attractions do

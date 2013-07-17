@@ -29,8 +29,12 @@ class AttractionsController < ApplicationController
   # GET /attractions/new
   # GET /attractions/new.json
   def new
-    @venue = Venue.find(params[:venue_id])
-    @attraction = Attraction.new
+    if(params.has_key?(:venue_id))
+      @venue = Venue.find(params[:venue_id])
+      @attractions = @venue.attractions
+    else
+      @attractions = Attraction.all
+    end
     
     respond_to do |format|
       format.html # new.html.erb
@@ -40,7 +44,6 @@ class AttractionsController < ApplicationController
 
   # GET /attractions/1/edit
   def edit
-    @venue = Venue.find(params[:venue_id])
     @attraction = Attraction.find(params[:id])
   end
 

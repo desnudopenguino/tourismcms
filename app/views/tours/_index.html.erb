@@ -1,10 +1,11 @@
   <h2>Tours <a href="#newTourModal" role="button" class="btn btn-success" data-toggle="modal"><i class="icon-plus icon-white"></i></a></h2>
-<ul id="sortable" class="media-list">
+<ul class="media-list">
   <% @tours.each do |tour| %>
-  <li class="ui-state-default media">
+  <li class="media">
     <%= link_to tour, :class => "pull-left" do %><%= holder_tag '100x75' %> <% end %>
     <div class="media-body">
-      <h4 class="media-heading"><%= tour.title %></h4>
+      <h4 class="media-heading"><%= link_to activate_tour_path(tour), :class => "btn btn-success pull-right" do %><i class="icon-share-alt icon-white"></i><% end %>
+        <%= tour.title %></h4>
       <div class="media">
         <%= tour.description %>
       </div>

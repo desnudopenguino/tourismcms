@@ -1,0 +1,26 @@
+<%= form_for(@attraction_tour) do |f| %>
+
+  <div class="field">
+    <%#= f.label :attraction_id %><br />
+    <%#= f.number_field :attraction_id %>
+  </div>
+  <div class="field">
+    <%#= f.label :tour_id %><br />
+    <%#= f.number_field :tour_id %>
+  </div>
+  <div class="field">
+    <%= f.label :radius %><br />
+    <%= f.text_field :radius %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :tour_order %><br />
+    <%= f.number_field :tour_order %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

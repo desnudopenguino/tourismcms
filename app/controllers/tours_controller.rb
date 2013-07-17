@@ -90,15 +90,21 @@ class ToursController < ApplicationController
     end
   end
 
-  # GET /tours/1/attractions
-  # GET /tours/1/attractions.json
-  def attractions
-    @tour = Tour.find(params[:tour_id])
-    @attractions = @tour.attraction_tours
+  # activates a tour
+  def activate
+    @tour = Tour.find(params[:id])
+    @tour.update_attribute(:active, true)
+    @venue = @tour.venue
 
-    respond_to do |format|
-      format.html #attractions.html.erb
-      format.json { render json: @attractions }
-    end
+    redirect_to @venue
+  end
+
+  # deactivates a tour
+  def deactivate
+    @tour = Tour.find(params[:id])
+    @tour.update_attribute(:active, false)
+    @venue = @tour.venue
+
+    redirect_to @venue
   end
 end

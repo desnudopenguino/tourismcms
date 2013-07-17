@@ -2,7 +2,11 @@ class AttractionToursController < ApplicationController
   # GET /attraction_tours
   # GET /attraction_tours.json
   def index
-    @attraction_tours = Tour.find(params[:tour_id]).attraction_tours
+    if params.has_key?(:tour_id)
+      @attraction_tours = Tour.find(params[:tour_id]).attraction_tours
+    else
+      @attraction_tours = AttractionTour.all
+    end
 
     respond_to do |format|
       format.html # index.html.erb
@@ -24,7 +28,8 @@ class AttractionToursController < ApplicationController
   # GET /attraction_tours/new
   # GET /attraction_tours/new.json
   def new
-    @attraction_tour = AttractionTour.new
+    @tour = Tour.find(params[:tour_id])
+    @attraction_tour = AttractionTour.create(:tour_id => params[:tour_id], :attraction_id => params[:attraction_id])
 
     respond_to do |format|
       format.html # new.html.erb
@@ -40,15 +45,16 @@ class AttractionToursController < ApplicationController
   # POST /attraction_tours
   # POST /attraction_tours.json
   def create
+    @tour = Tour.find(params[:tour_id])
     @attraction_tour = AttractionTour.new(params[:attraction_tour])
 
     respond_to do |format|
       if @attraction_tour.save
-        format.html { redirect_to @attraction_tour, notice: 'Attraction tour was successfully created.' }
-        format.json { render json: @attraction_tour, status: :created, location: @attraction_tour }
+        format.html { redirect_to @tour, notice: 'Attraction tour was successfully created.' }
+        # format.json { render json: @attraction_tour, status: :created, location: @attraction_tour }
       else
-        format.html { render action: "new" }
-        format.json { render json: @attraction_tour.errors, status: :unprocessable_entity }
+        # format.html { render action: "new" }
+        # format.json { render json: @attraction_tour.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -72,11 +78,12 @@ class AttractionToursController < ApplicationController
   # DELETE /attraction_tours/1
   # DELETE /attraction_tours/1.json
   def destroy
+    @tour = Tour.find(params[:tour_id])
     @attraction_tour = AttractionTour.find(params[:id])
     @attraction_tour.destroy
 
     respond_to do |format|
-      format.html { redirect_to attraction_tours_url }
+      format.html { redirect_to @tour }
       format.json { head :no_content }
     end
   end
