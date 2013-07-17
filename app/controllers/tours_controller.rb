@@ -27,23 +27,6 @@ class ToursController < ApplicationController
     end
   end
 
-  # GET /tours/new
-  # GET /tours/new.json
-#  def new
-#    @venue = Venue.find(params[:venue_id])
-#    @tour = Tour.new
-#
-#    respond_to do |format|
-#      format.html # new.html.erb
-#      format.json { render json: @tour }
-#    end
-#  end
-
-  # GET /tours/1/edit
-#  def edit
-#    @tour = Tour.find(params[:id])
-#  end
-
   # POST /tours
   # POST /tours.json
   def create
