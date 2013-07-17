@@ -18,11 +18,11 @@ class ToursController < ApplicationController
   # GET /tours/1.json
   def show
     @tour = Tour.find(params[:id])
-    @attraction_tours = @tour.attraction_tours
+    @attraction_tours = @tour.attraction_tours.order("order DESC")
     @attractions = @tour.venue.attractions
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render :json => @tour.to_json( :include => [:attraction_tours,:media]) }
+      format.json { render :json => @tour.to_json( :include => {:attraction_tours => { :include => :tour } ,:media => {} } ) }
     end
   end
 

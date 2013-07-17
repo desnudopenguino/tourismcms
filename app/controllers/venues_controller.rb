@@ -16,7 +16,6 @@ class VenuesController < ApplicationController
     @venue = Venue.find(params[:id])
     @attractions = @venue.attractions
     @tours = @venue.tours
-    # @inactive_tours = @tours.where('active = false')
     @active_tours = @tours.where('active = true')
 
     respond_to do |format|

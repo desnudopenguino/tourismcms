@@ -6,6 +6,12 @@
     <title><%= content_for?(:title) ? yield(:title) : "BCT" %></title>
     <meta name="description" content="">
     <meta name="author" content="">
+    <script>
+      $(function() {
+        $("#sortable").sortable();
+        $("#sortable").disableSelection();
+      });
+    </script>
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>

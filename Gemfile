@@ -10,6 +10,7 @@ gem 'rails', '3.2.12'
 gem 'pg'
 gem 'bootstrap-sass'
 gem 'holder_rails'
+gem 'jquery-ui-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.

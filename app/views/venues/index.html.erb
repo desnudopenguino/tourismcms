@@ -2,14 +2,7 @@
 <ul class="media-list">
 <% @venues.each do |venue| %>
   <li class="media">
-    <%= link_to venue, :class => "pull-left" do%>
-      <% if venue.media.where(:media_type =>  "image") %>
-        <% venue_img = venue.media.find(:media_type == "image") %>
-        <%= image_tag venue_img.content %>
-      <% else %>
-        <%= holder_tag '100x75' %>
-      <% end %>
-    <% end %>
+    <%= link_to venue, :class => "pull-left" do%><%= holder_tag '100x75' %><% end %>
     <div class="media-body">
       <h4 class="media-heading"><%= venue.name %></h4>
       <div class="">
