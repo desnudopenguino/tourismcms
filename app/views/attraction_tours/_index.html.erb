@@ -3,7 +3,11 @@
 <% @attraction_tours.each do |attraction_tour| %>
   <li class="media">
     <%= link_to attraction_tour, :class => "pull-left" do %>
-      <%= holder_tag '100x75' %>
+      <% if attraction_tour.media.where(media_type: "image") %>
+        <%= image_tag attraction_tour.media.where(media_type: "image").first.content, :size => "100x100" %>
+      <% else %>
+        <%= holder_tag '100x75' %>
+      <% end %>
     <% end %>
     <div class="media-body">
       <h4 class="media-heading"><%= attraction_tour.tour_order %>. <%= link_to tour_attraction_tour_path(@tour,attraction_tour), method: :delete, :class => "btn btn-danger pull-right" do %>
