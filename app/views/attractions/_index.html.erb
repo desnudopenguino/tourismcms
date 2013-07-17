@@ -3,7 +3,7 @@
 <% @attractions.each do |attraction| %>
   <li class="media">
     <%= link_to attraction, :class => "pull-left" do %>
-      <%= holder_tag '100x75' %>
+      <%= holder_tag '100x100' %>
     <% end %>
     <div class="media-body">
       <h4 class="media-heading"><%= link_to new_tour_attraction_tour_path(@tour,:attraction_id => attraction.id), :class => "btn btn-success pull-right" do %>

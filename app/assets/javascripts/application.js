@@ -14,5 +14,4 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require holder
-//= require jquery.ui.all
 //= require_tree .
