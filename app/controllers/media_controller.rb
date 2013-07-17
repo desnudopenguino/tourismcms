@@ -45,17 +45,17 @@ class MediaController < ApplicationController
     #@medium = Medium.new(params[:medium])
     @medium = @multimedia.media.build(params[:medium])
 
-    #respond_to do |format|
+    respond_to do |format|
       if @medium.save
-        redirect_to :id => nil
-        #format.html { redirect_to @medium, notice: 'Medium was successfully created.' }
+        #redirect_to :id => nil
+        format.html { redirect_to @multimedia, notice: 'Medium was successfully created.' }
         #format.json { render json: @medium, status: :created, location: @medium }
       else
         render :action => 'new'
         # format.html { render action: "new" }
         # format.json { render json: @medium.errors, status: :unprocessable_entity }
       end
-    #end
+    end
   end
 
   # PUT /media/1
@@ -79,9 +79,10 @@ class MediaController < ApplicationController
   def destroy
     @medium = Medium.find(params[:id])
     @medium.destroy
+    @multimedia = find_media
 
     respond_to do |format|
-      format.html { redirect_to media_url }
+      format.html { redirect_to @multimedia }
       format.json { head :no_content }
     end
   end
@@ -95,12 +96,3 @@ class MediaController < ApplicationController
     nil
   end
 end
-
-  def fullindex
-    @media = Media.all 
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @media }
-    end
-  end

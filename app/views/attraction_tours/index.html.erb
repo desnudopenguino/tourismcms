@@ -14,7 +14,7 @@
 
 <% @attraction_tours.each do |attraction_tour| %>
   <tr>
-    <td><%= attraction_tour.attraction_id %></td>
+    <td><%= attraction_tour.attraction.title %></td>
     <td><%= attraction_tour.tour_id %></td>
     <td><%= attraction_tour.radius %></td>
     <td><%= attraction_tour.description %></td>

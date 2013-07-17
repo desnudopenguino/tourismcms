@@ -22,7 +22,7 @@ class ToursController < ApplicationController
     @attractions = @tour.venue.attractions
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render :json => @tour.to_json( :include => {:attraction_tours => { :include => :tour } ,:media => {} } ) }
+      format.json { render :json => @tour.to_json( :include => {:attraction_tours => { :include => :attraction} , :media => {} } ) }
     end
   end
 

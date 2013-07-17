@@ -35,7 +35,9 @@ Bct::Application.routes.draw do
     get 'fullindex'
   end
   
-  resources :attraction_tours
+  resources :attraction_tours do
+    resources :media
+  end
   
   root :to => "venues#index"
   
