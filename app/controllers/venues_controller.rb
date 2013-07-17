@@ -27,19 +27,19 @@ class VenuesController < ApplicationController
 
   # GET /venues/new
   # GET /venues/new.json
-  def new
-    @venue = Venue.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @venue }
-    end
-  end
+#  def new
+#    @venue = Venue.new
+#
+#    respond_to do |format|
+#      format.html # new.html.erb
+#      format.json { render json: @venue }
+#    end
+#  end
 
   # GET /venues/1/edit
-  def edit
-    @venue = Venue.find(params[:id])
-  end
+#  def edit
+#    @venue = Venue.find(params[:id])
+#  end
 
   # POST /venues
   # POST /venues.json

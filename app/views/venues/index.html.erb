@@ -2,7 +2,7 @@
 <ul class="media-list">
 <% @venues.each do |venue| %>
   <li class="media">
-    <%= link_to venue, :class => "pull-left" do%><%= holder_tag '100x75' %><% end %>
+    <%= link_to venue, :class => "pull-left" do%><%= holder_tag '100x100' %><% end %>
     <div class="media-body">
       <h4 class="media-heading"><%= venue.name %></h4>
       <div class="">
@@ -14,5 +14,5 @@
 </ul>
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <% @venue = Venue.new %>
-  <%= render "venues/form" %>
+  <%= render "venues/new" %>
 </div>

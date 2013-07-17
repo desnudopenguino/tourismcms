@@ -17,6 +17,7 @@ class ToursController < ApplicationController
   # GET /tours/1
   # GET /tours/1.json
   def show
+    @venue = get_venue
     @tour = Tour.find(params[:id])
     @attraction_tours = @tour.attraction_tours.order("tour_order ASC")
     @attractions = @tour.venue.attractions
@@ -106,5 +107,12 @@ class ToursController < ApplicationController
     @venue = @tour.venue
 
     redirect_to @venue
+  end
+
+  # gets the venue (instead of having to use all of this in each function)
+  def get_venue
+    @tour = Tour.find(params[:id])
+    @venue = @tour.venue
+    return @venue
   end
 end

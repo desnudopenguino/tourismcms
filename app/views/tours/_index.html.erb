@@ -2,7 +2,7 @@
 <ul class="media-list">
   <% @tours.each do |tour| %>
   <li class="media">
-    <%= link_to tour, :class => "pull-left" do %><%= holder_tag '100x75' %> <% end %>
+    <%= link_to tour, :class => "pull-left" do %><%= holder_tag '100x100' %> <% end %>
     <div class="media-body">
       <h4 class="media-heading"><%= link_to activate_tour_path(tour), :class => "btn btn-success pull-right" do %><i class="icon-share-alt icon-white"></i><% end %>
         <%= tour.title %></h4>
@@ -15,5 +15,5 @@
 </ul>
 <div id="newTourModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 <% @tour = Tour.new %>
-<%= render "tours/form" %>
+<%= render "tours/new" %>
 </div>

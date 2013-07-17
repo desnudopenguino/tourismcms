@@ -1,6 +1,6 @@
-<p><%= link_to @tour.venue.name, @tour.venue %> / <%= @tour.title %> 
+<p><%= link_to @venue.name, @venue %> / <%= @tour.title %></p>
 <h1><%= @tour.title %>
-<%= link_to [:edit, @tour], :class => "btn btn-info" do %><i class="icon-pencil icon-white"></i><% end %>
+<a href="#editTourModal" role="button" data-toggle="modal" class="btn btn-info"><i class="icon-edit icon-white"></i></a>
 <%= link_to  @tour, method: :delete, :class=> "btn btn-danger" do %><i class="icon-remove icon-white"></i><% end %>
 </h1>
 <p>
@@ -16,3 +16,8 @@
   </div>
 </div>
 <%= link_to 'Manage Media', tour_media_path(@tour) %>
+
+
+<div id="editTourModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="editTourModalLabel" aria-hidder="true">
+  <%= render "tours/edit" %>
+</div>
