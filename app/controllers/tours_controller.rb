@@ -65,7 +65,7 @@ class ToursController < ApplicationController
   # DELETE /tours/1.json
   def destroy
     @tour = Tour.find(params[:id])
-    @venue = @tour.venue
+    @venue = get_venue 
     @tour.destroy
 
     respond_to do |format|
@@ -92,7 +92,7 @@ class ToursController < ApplicationController
     redirect_to @venue
   end
 
-  # gets the venue (instead of having to use all of this in each function)
+  # gets the venue
   def get_venue
     @tour = Tour.find(params[:id])
     @venue = @tour.venue
