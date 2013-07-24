@@ -26,7 +26,7 @@
   <%= @attraction_tour.tour_order %>
 </p>
 
-<%= image_tag @attraction_tour.media.where(media_type: 'image').first.content, :size => "100x100" %>
+<%#= image_tag @attraction_tour.media.where(media_type: 'image').first.content, :size => "100x100" %>
 
 <%= link_to 'Edit', edit_attraction_tour_path(@attraction_tour) %> |
 <%= link_to 'Back', attraction_tours_path %> |
