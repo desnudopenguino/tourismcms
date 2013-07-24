@@ -3,10 +3,12 @@
 <% @attraction_tours.each do |attraction_tour| %>
   <li class="media">
     <%= link_to attraction_tour, :class => "pull-left" do %>
-      <% if attraction_tour.media.where(media_type: "image") %>
-        <%= image_tag attraction_tour.media.where(media_type: "image").first.content, :size => "100x100" %>
+      <% if attraction_tour.media.where(media_type: "image").exists? %>
+        <% @media = attraction_tour.media.where(media_type: "image").first %>
+        <% image_url = @media.content %>
+        <%= image_tag image_url, :size => "100x100" %>
       <% else %>
-        <%= holder_tag '100x75' %>
+        <%= holder_tag '100x100' %>
       <% end %>
     <% end %>
     <div class="media-body">
