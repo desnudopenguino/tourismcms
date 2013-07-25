@@ -1,11 +1,9 @@
-<h1>Listing tours</h1>
+<h1>Tours</h1>
 
 <table class="table table-striped">
   <tr>
     <th>Title</th>
     <th>Description</th>
-    <th></th>
-    <th></th>
     <th></th>
   </tr>
 
@@ -14,12 +12,6 @@
     <td><%= tour.title %></td>
     <td><%= tour.description %></td>
     <td><%= link_to 'Show', tour %></td>
-    <td><%= link_to 'Edit', edit_tour_path(tour) %></td>
-    <td><%= link_to 'Destroy', tour, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%# this should be in the venue views  link_to 'New Tour', new_venue_tour_path %>

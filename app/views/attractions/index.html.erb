@@ -1,19 +1,17 @@
-<%= link_to @venue.name, @venue %>
-<h2>Attractions <a href="#newAttractionModal" role="button" class="btn btn-success" data-toggle="modal"><i class="icon-plus icon-white"></i></a></h2>
-
+<h1>Attractions</h1>
+<table class="table table-striped">
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Location</th>
+    <th></th>
+  </tr>
 <% @attractions.each do |attraction| %>
-  <div class="attraction">
-    <%= link_to venue_attraction_path(attraction.venue_id,attraction), method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger right" do %>
-      <i class="icon-remove icon-white"></i>
-    <% end %>
-    <%= link_to edit_venue_attraction_path(attraction.venue_id,attraction), :class => "btn btn-primary right" do %>
-        <i class="icon-pencil icon-white"></i>
-    <% end %>
-    <h3><%= link_to attraction.title, venue_attraction_path(attraction.venue_id,attraction) %></h3>
-  </div>
+  <tr>
+    <td><%= attraction.title %></td>
+    <td><%= attraction.description %></td>
+    <td><%= "#{attraction.latitude}, #{attraction.longitude}" %></td>
+    <td><%= link_to "View", attraction %></td>
+  </tr>
 <% end %>
-
-<div id="newAttractionModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-<% @attraction = Attraction.new %>
-<%= render "attractions/form" %>
-</div>
+</table>

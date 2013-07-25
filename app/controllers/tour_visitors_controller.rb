@@ -71,7 +71,7 @@ class TourVisitorsController < ApplicationController
     respond_to do |format|
       if @tour_visitor.update_attributes(params[:tour_visitor])
         format.html { redirect_to @tour_visitor, notice: 'Tour visitor was successfully updated.' }
-        format.json { head :no_content }
+        format.json { render @tour_visitor }
       else
         format.html { render action: "edit" }
         format.json { render json: @tour_visitor.errors, status: :unprocessable_entity }
