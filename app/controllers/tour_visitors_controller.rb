@@ -70,7 +70,7 @@ class TourVisitorsController < ApplicationController
 
     respond_to do |format|
       if @tour_visitor.update_attributes(params[:tour_visitor])
-        format.html { redirect_to @tour_visitor, notice: 'Tour visitor was successfully updated.' }
+        # format.html { redirect_to @tour_visitor, notice: 'Tour visitor was successfully updated.' }
         format.json { render @tour_visitor }
       else
         format.html { render action: "edit" }
