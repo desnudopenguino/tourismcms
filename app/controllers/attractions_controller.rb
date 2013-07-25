@@ -44,6 +44,7 @@ class AttractionsController < ApplicationController
 
   # GET /attractions/1/edit
   def edit
+    @venue = Venue.find(params[:venue_id])
     @attraction = Attraction.find(params[:id])
   end
 
