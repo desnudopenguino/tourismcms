@@ -1,17 +1,10 @@
-<p><%= link_to @attraction.venue, @attraction.venue.name %> / <%= @attraction.title %>
-<p>
-  <b>Tour:</b>
-  <%= @attraction.venue_id %>
-</p>
+<p><%= link_to @attraction.venue.name, @attraction.venue %> / <%= @attraction.title %></p>
+
+<h1><%= @attraction.title %></h1>
 
 <p>
-  <b>Location:</b>
+  <strong>Location:</strong>
   <%= @attraction.latitude %>, <%= @attraction.longitude %>
-</p>
-
-<p>
-  <b>Title:</b>
-  <%= @attraction.title %>
 </p>
 
 <p>
@@ -19,6 +12,4 @@
   <%= @attraction.description %>
 </p>
 
-
-<%= link_to 'Edit', edit_attraction_path(@attraction) %> |
 <%= link_to 'Manage Media', attraction_media_path(@attraction) %>
