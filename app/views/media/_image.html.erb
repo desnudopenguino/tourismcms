@@ -1,0 +1,6 @@
+<% if @multimedia.media.where(media_type: "image").exists? %>
+  <% @media = @multimedia.media.where(media_type: "image").first %>
+  <%= image_tag @media.content, :size => "100x100" %>
+<% else %>
+  <%= holder_tag '100x100' %>
+<% end %>

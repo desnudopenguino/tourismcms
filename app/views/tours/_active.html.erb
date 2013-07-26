@@ -2,7 +2,8 @@
   <% @active_tours.each do |tour| %>
     <li class="media">
       <%= link_to tour, :class => "pull-left" do %>
-        <%= holder_tag '100x100' %>
+        <% @multimedia = tour %>
+        <%= render "media/image" %>
       <% end %>
       <div class="media-body">
         <h4 class="media-heading"><%= link_to deactivate_tour_path(tour), :class => "btn btn-danger pull-right" do %><i class="icon-trash icon-white"></i><% end %>

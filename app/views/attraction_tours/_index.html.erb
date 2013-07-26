@@ -3,13 +3,8 @@
 <% @attraction_tours.each do |attraction_tour| %>
   <li class="media">
     <%= link_to attraction_tour, :class => "pull-left" do %>
-      <% if attraction_tour.media.where(media_type: "image").exists? %>
-        <% @media = attraction_tour.media.where(media_type: "image").first %>
-        <% image_url = @media.content %>
-        <%= image_tag image_url, :size => "100x100" %>
-      <% else %>
-        <%= holder_tag '100x100' %>
-      <% end %>
+      <% @multimedia = attraction_tour %>
+      <%= render "media/image" %>
     <% end %>
     <div class="media-body">
       <h4 class="media-heading"><%= attraction_tour.tour_order %>. <%= link_to tour_attraction_tour_path(@tour,attraction_tour), method: :delete, :class => "btn btn-danger pull-right" do %>
