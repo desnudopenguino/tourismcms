@@ -48,10 +48,9 @@ class TimeVisitorsController < ApplicationController
   # POST /time_visitors.json
   def create
     @tour_visitor = TourVisitor.find(params[:tour_visitor_id])
-    #@time_visitor = TimeVisitor.new(params[:time_visitor])
     @time_visitor = @tour_visitor.time_visitors.create(params[:time_visitor])
     
-    render json: @tour_visitor.time_visitors
+    render json: @time_visitor 
   end
 
   # PUT /time_visitors/1
