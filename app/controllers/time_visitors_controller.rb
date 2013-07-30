@@ -50,7 +50,7 @@ class TimeVisitorsController < ApplicationController
     @tour_visitor = TourVisitor.find(params[:tour_visitor_id])
     @time_visitor = @tour_visitor.time_visitors.create(params[:time_visitor])
     
-    render json: @time_visitor 
+    redirect_to @tour_visitor
   end
 
   # PUT /time_visitors/1
