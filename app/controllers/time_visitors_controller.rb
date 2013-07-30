@@ -49,17 +49,9 @@ class TimeVisitorsController < ApplicationController
   def create
     @tour_visitor = TourVisitor.find(params[:tour_visitor_id])
     #@time_visitor = TimeVisitor.new(params[:time_visitor])
-    @time_visitor = @tour_visitor.time_visitors.new(params[:time_visitor])
-
-    respond_to do |format|
-      if @time_visitor.save
-        format.html { redirect_to @time_visitor, notice: 'Time visitor was successfully created.' }
-        format.json { render json: @time_visitor, status: :created, location: @time_visitor }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @time_visitor.errors, status: :unprocessable_entity }
-      end
-    end
+    @time_visitor = @tour_visitor.time_visitors.create(params[:time_visitor])
+    
+    render json: @tour_visitor.time_visitors
   end
 
   # PUT /time_visitors/1
