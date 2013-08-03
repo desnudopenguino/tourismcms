@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  attraction_tour_id: 1
+  start: 
+  end: 
+
+two:
+  attraction_tour_id: 1
+  start: 
+  end: 

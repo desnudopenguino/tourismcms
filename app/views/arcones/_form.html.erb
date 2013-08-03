@@ -1,0 +1,29 @@
+<%= form_for(@arcone) do |f| %>
+  <% if @arcone.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@arcone.errors.count, "error") %> prohibited this arcone from being saved:</h2>
+
+      <ul>
+      <% @arcone.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :attraction_tour_id %><br />
+    <%= f.number_field :attraction_tour_id %>
+  </div>
+  <div class="field">
+    <%= f.label :start %><br />
+    <%= f.text_field :start %>
+  </div>
+  <div class="field">
+    <%= f.label :end %><br />
+    <%= f.text_field :end %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -5,4 +5,5 @@ class AttractionTour < ActiveRecord::Base
   belongs_to :attraction
   has_many :media, :as => :multimedia
   has_many :messages
+  has_many :arcones
 end

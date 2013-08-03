@@ -1,5 +1,8 @@
 Bct::Application.routes.draw do
 
+  resources :arcones
+
+
   resources :venues do
     resources :tours
     resources :assets

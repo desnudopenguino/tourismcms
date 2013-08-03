@@ -1,0 +1,27 @@
+<h1>Listing arcones</h1>
+
+<table>
+  <tr>
+    <th>Attraction tour</th>
+    <th>Start</th>
+    <th>End</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @arcones.each do |arcone| %>
+  <tr>
+    <td><%= arcone.attraction_tour_id %></td>
+    <td><%= arcone.start %></td>
+    <td><%= arcone.end %></td>
+    <td><%= link_to 'Show', arcone %></td>
+    <td><%= link_to 'Edit', edit_arcone_path(arcone) %></td>
+    <td><%= link_to 'Destroy', arcone, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Arcone', new_arcone_path %>
