@@ -31,11 +31,10 @@ class AttractionsController < ApplicationController
   def new
     if(params.has_key?(:venue_id))
       @venue = Venue.find(params[:venue_id])
-      @attractions = @venue.attractions
-    else
-      @attractions = Attraction.all
     end
-    
+
+    @attraction = Attraction.find(params[:attraction])    
+
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @attraction }

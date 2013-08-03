@@ -1,4 +1,4 @@
-<h2>Attractions:</h2>
+<h2>Attractions: <a href="#newAttractionModal" role="button" class="btn btn-success" data-toggle="modal"><i class="icon-plus icon-white"></i></a></h2>
 <ul class="media-list">
 <% @attractions.each do |attraction| %>
   <li class="media">
@@ -17,3 +17,7 @@
   </li>
 <% end %>
 </ul>
+<div id="newAttractionModal" class="modal hide fade" tabindex="-1" role="dialog" arial-labelledby="myModalLabel" arial-hidden="true">
+  <% @attraction = Attraction.new %>
+  <%= render "attractions/new"%>
+</div>
