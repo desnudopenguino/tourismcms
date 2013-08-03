@@ -18,6 +18,7 @@ class AttractionToursController < ApplicationController
   # GET /attraction_tours/1.json
   def show
     @attraction_tour = AttractionTour.find(params[:id])
+    @messages = @attraction_tour.messages
 
     respond_to do |format|
       format.html # show.html.erb

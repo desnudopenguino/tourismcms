@@ -1,34 +1,29 @@
-<%= link_to @attraction_tour.attraction.venue do %><%= @attraction_tour.attraction.venue.name %><% end %> / <%= link_to @attraction_tour.tour do %><%= @attraction_tour.tour.title %><% end %> / <%= @attraction_tour.attraction.title %>
-<p id="notice"><%= notice %></p>
+<div class="span6">
+  <%= link_to @attraction_tour.attraction.venue do %><%= @attraction_tour.attraction.venue.name %><% end %> / <%= link_to @attraction_tour.tour do %><%= @attraction_tour.tour.title %><% end %> / <%= @attraction_tour.attraction.title %>
+    <h1><%= @attraction_tour.attraction.title %>
+    <a href="#editAttractionModal" role="button" data-toggle="modal" class="btn btn-info"><i class="icon-edit icon-white"></i></a>
+    <%= link_to @attraction_tour, method: :delete, :class => "btn btn-danger" do %><i class="icon-remove  icon-white"></i></a><% end %>
+    </h1>
+    <p>
+      <strong>Order:</strong>
+      <%= @attraction_tour.tour_order %>
+      <strong>Radius:</strong>
+      <%= @attraction_tour.radius %>
+    </p>
 
-<p>
-  <b>Attraction:</b>
-  <%= @attraction_tour.attraction_id %>
-</p>
+    <p>
+      <strong>Description:</strong>
+      <%= @attraction_tour.description %>
+    </p>
+</div>
+<div class="span6">
+<%= render "messages/index" %>
+</div>
+</div>
+<div class="row">
+<%= link_to 'Manage Media', attraction_tour_media_path(@attraction_tour) %>
+</div>
 
-<p>
-  <b>Tour:</b>
-  <%= @attraction_tour.tour_id %>
-</p>
-
-<p>
-  <b>Radius:</b>
-  <%= @attraction_tour.radius %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @attraction_tour.description %>
-</p>
-
-<p>
-  <b>Order:</b>
-  <%= @attraction_tour.tour_order %>
-</p>
-
-<%#= image_tag @attraction_tour.media.where(media_type: 'image').first.content, :size => "100x100" %>
-
-<%= link_to 'Edit', edit_attraction_tour_path(@attraction_tour) %> |
-<%= link_to 'Back', attraction_tours_path %> |
-<%= link_to 'Manage Media', attraction_tour_media_path(@attraction_tour) %> |
-<%= link_to 'Manage Messages', attraction_tour_messages_path(@attraction_tour) %>
+<div id="editAttractionModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <%= render "attraction_tours/edit" %>
+</div>

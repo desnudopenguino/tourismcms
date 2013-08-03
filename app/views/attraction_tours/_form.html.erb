@@ -1,16 +1,5 @@
 <%= form_for([@tour,@attraction_tour]) do |f| %>
-  <% if @attraction_tour.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@attraction_tour.errors.count, "error") %> prohibited this attraction_tour from being saved:</h2>
-
-      <ul>
-      <% @attraction_tour.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
+<div class="modal-body">
   <div class="field">
     <%= f.label :radius %><br />
     <%= f.text_field :radius %>
@@ -23,7 +12,9 @@
     <%= f.label :tour_order %><br />
     <%= f.number_field :tour_order %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+</div>
+<div class="modal-footer">
+  <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  <%= content_tag(:button, "Save", :type => :sumbit, :class => "btn btn-success") %>
+</div>
 <% end %>

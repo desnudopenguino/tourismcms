@@ -51,7 +51,7 @@ class MessagesController < ApplicationController
 
     respond_to do |format|
       if @message.save
-        format.html { redirect_to attraction_tour_messages_path(@attraction_tour), notice: 'Message was successfully created.' }
+        format.html { redirect_to attraction_tour_path(@attraction_tour), notice: 'Message was successfully created.' }
         format.json { render json: @message, status: :created, location: @message }
       else
         format.html { render action: "new" }
