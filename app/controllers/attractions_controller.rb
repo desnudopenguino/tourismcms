@@ -70,10 +70,11 @@ class AttractionsController < ApplicationController
   def update
     @venue = Venue.find(params[:venue_id])
     @attraction = Attraction.find(params[:id])
+    
 
     respond_to do |format|
       if @attraction.update_attributes(params[:attraction])
-        format.html { redirect_to venue_attraction_path(@venue,@attraction), notice: 'Attraction was successfully updated.' }
+        format.html { redirect_to attraction_path(@attraction), notice: 'Attraction was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
