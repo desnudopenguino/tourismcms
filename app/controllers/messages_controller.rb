@@ -80,10 +80,11 @@ class MessagesController < ApplicationController
   # DELETE /messages/1.json
   def destroy
     @message = Message.find(params[:id])
+    @attraction_tour = @message.attraction_tour
     @message.destroy
 
     respond_to do |format|
-      format.html { redirect_to messages_url }
+      format.html { redirect_to attraction_tour_path(@attraction_tour) }
       format.json { head :no_content }
     end
   end
