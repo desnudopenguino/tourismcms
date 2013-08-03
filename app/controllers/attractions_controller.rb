@@ -86,10 +86,11 @@ class AttractionsController < ApplicationController
   # DELETE /attractions/1.json
   def destroy
     @attraction = Attraction.find(params[:id])
+    @venue = @attraction.venue
     @attraction.destroy
 
     respond_to do |format|
-      format.html { redirect_to attractions_url }
+      format.html { redirect_to venue_path(@venue)}
       format.json { head :no_content }
     end
   end

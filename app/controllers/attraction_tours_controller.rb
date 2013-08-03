@@ -79,8 +79,8 @@ class AttractionToursController < ApplicationController
   # DELETE /attraction_tours/1
   # DELETE /attraction_tours/1.json
   def destroy
-    @tour = Tour.find(params[:tour_id])
     @attraction_tour = AttractionTour.find(params[:id])
+    @tour = @attraction_tour.tour
     @attraction_tour.destroy
 
     respond_to do |format|
