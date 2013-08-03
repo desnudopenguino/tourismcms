@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130802212842) do
+ActiveRecord::Schema.define(:version => 20130803152138) do
+
+  create_table "arcones", :force => true do |t|
+    t.integer  "attraction_tour_id"
+    t.float    "start"
+    t.float    "end"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
 
   create_table "assets", :force => true do |t|
     t.integer "venue_id"

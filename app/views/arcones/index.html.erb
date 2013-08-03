@@ -1,6 +1,6 @@
-<h1>Listing arcones</h1>
+<h1>AR Cones</h1>
 
-<table>
+<table class="table table-striped">
   <tr>
     <th>Attraction tour</th>
     <th>Start</th>
@@ -12,7 +12,7 @@
 
 <% @arcones.each do |arcone| %>
   <tr>
-    <td><%= arcone.attraction_tour_id %></td>
+    <td><%= arcone.attraction_tour.title %></td>
     <td><%= arcone.start %></td>
     <td><%= arcone.end %></td>
     <td><%= link_to 'Show', arcone %></td>
