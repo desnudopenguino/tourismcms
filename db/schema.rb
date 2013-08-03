@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130717072837) do
+ActiveRecord::Schema.define(:version => 20130802212842) do
 
   create_table "assets", :force => true do |t|
     t.integer "venue_id"
@@ -40,6 +40,14 @@ ActiveRecord::Schema.define(:version => 20130717072837) do
     t.string  "content"
     t.integer "multimedia_id"
     t.string  "multimedia_type"
+  end
+
+  create_table "messages", :force => true do |t|
+    t.integer  "attraction_tour_id"
+    t.integer  "order"
+    t.string   "content"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
   end
 
   create_table "progresses", :force => true do |t|

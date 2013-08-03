@@ -41,9 +41,13 @@ Bct::Application.routes.draw do
   
   resources :attraction_tours do
     resources :media
+    resources :messages
   end
   
+  resources :messages
+
   root :to => "venues#index"
+
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
