@@ -3,7 +3,7 @@
 <% @attraction_tours.each do |attraction_tour| %>
   <li class="media">
     <%= link_to attraction_tour, :class => "pull-left" do %>
-      <% @multimedia = attraction_tour %>
+      <% @multimedia = attraction_tour.get_attraction_image( attraction_tour ) %>
       <%= render "media/image" %>
     <% end %>
     <div class="media-body">

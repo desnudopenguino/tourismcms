@@ -51,3 +51,9 @@ div.venue {
   margin-left: 50px;
   margin-right: 50px;
 }
+
+.tours, .attractions {
+  height: 400px !important;
+  overflow-y: scroll;
+}
+

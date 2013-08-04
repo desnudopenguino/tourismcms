@@ -1,6 +1,7 @@
 <div class="span6">
   <%= link_to @attraction_tour.attraction.venue do %><%= @attraction_tour.attraction.venue.name %><% end %> / <%= link_to @attraction_tour.tour do %><%= @attraction_tour.tour.title %><% end %> / <%= @attraction_tour.attraction.title %>
-    <h1><%= @attraction_tour.attraction.title %>
+    <h1><%= render "media/image" %>
+      <%= @attraction_tour.attraction.title %>
     <a href="#editAttractionModal" role="button" data-toggle="modal" class="btn btn-info"><i class="icon-edit icon-white"></i></a>
     <%= link_to @attraction_tour, method: :delete, :class => "btn btn-danger" do %><i class="icon-remove  icon-white"></i></a><% end %>
     </h1>
@@ -23,7 +24,6 @@
 <div class="row">
 <%= link_to 'Manage Media', attraction_tour_media_path(@attraction_tour) %>
 </div>
-
 <div id="editAttractionModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <%= render "attraction_tours/edit" %>
 </div>

@@ -18,6 +18,7 @@ class AttractionToursController < ApplicationController
   # GET /attraction_tours/1.json
   def show
     @attraction_tour = AttractionTour.find(params[:id])
+    @multimedia = @attraction_tour.get_attraction_image( @attraction_tour )
     @messages = @attraction_tour.messages
 
     respond_to do |format|
