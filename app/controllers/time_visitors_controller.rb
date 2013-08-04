@@ -11,6 +11,7 @@ class TimeVisitorsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @time_visitors }
+      format.csv { send_data  @time_visitors.as_csv }
     end
   end
 
