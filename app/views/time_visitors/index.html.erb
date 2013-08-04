@@ -1,10 +1,9 @@
 <h1>Listing time_visitors</h1>
 
-<table>
+<table class="table table-striped">
   <tr>
     <th>Tour visitor</th>
-    <th>Latitude</th>
-    <th>Longitude</th>
+    <th>Latitude, Longitude</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,8 +12,7 @@
 <% @time_visitors.each do |time_visitor| %>
   <tr>
     <td><%= time_visitor.tour_visitor_id %></td>
-    <td><%= time_visitor.latitude %></td>
-    <td><%= time_visitor.longitude %></td>
+    <td><%= time_visitor.latitude %>, <%= time_visitor.longitude %></td>
     <td><%= link_to 'Show', tour_visitor_time_visitor_path(time_visitor.tour_visitor_id,time_visitor) %></td>
     <td><%= link_to 'Destroy', tour_visitor_time_visitor_path(time_visitor.tour_visitor_id,time_visitor), method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
