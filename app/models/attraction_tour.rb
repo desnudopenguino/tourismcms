@@ -5,7 +5,7 @@ class AttractionTour < ActiveRecord::Base
   belongs_to :attraction
   has_many :media, :as => :multimedia
   has_many :messages
-  has_one :arcones
+  has_many :arcones
 
   def get_attraction_image( attraction_tour )
     if((!attraction_tour.media.where(media_type: "image").exists?) and (attraction_tour.attraction.media.where(media_type: "image").exists?))
