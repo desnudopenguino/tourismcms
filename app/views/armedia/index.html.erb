@@ -1,0 +1,33 @@
+<h1>Listing armedia</h1>
+
+<table class="table table-striped">
+  <tr>
+    <th>Medium</th>
+    <th>Arcone start</th>
+    <th>Arcone end</th>
+    <th>Sound track</th>
+    <th>Rgb</th>
+    <th>Alpha</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @armedia.each do |armedium| %>
+  <tr>
+    <td><%= armedium.medium_id %></td>
+    <td><%= armedium.arcone_start %></td>
+    <td><%= armedium.arcone_end %></td>
+    <td><%= armedium.sound_track %></td>
+    <td><%= armedium.rgb %></td>
+    <td><%= armedium.alpha %></td>
+    <td><%= link_to 'Show', armedium %></td>
+    <td><%= link_to 'Edit', edit_armedium_path(armedium) %></td>
+    <td><%= link_to 'Destroy', armedium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Armedium', new_armedium_path %>

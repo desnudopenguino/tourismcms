@@ -1,8 +1,5 @@
 Bct::Application.routes.draw do
 
-  resources :arcones
-
-
   resources :venues do
     resources :tours
     resources :assets
@@ -39,7 +36,7 @@ Bct::Application.routes.draw do
   end
   
   resources :media do
-    get 'fullindex'
+    resources :armedia
   end
   
   resources :attraction_tours do
@@ -49,7 +46,7 @@ Bct::Application.routes.draw do
   end
   
   resources :messages
-  resources :arcones
+  resources :armedia
 
   root :to => "venues#index"
 

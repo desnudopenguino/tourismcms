@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  medium_id: 
+  arcone_start: 1.5
+  arcone_end: 1.5
+  sound_track: MyString
+  rgb: MyString
+  alpha: MyString
+
+two:
+  medium_id: 
+  arcone_start: 1.5
+  arcone_end: 1.5
+  sound_track: MyString
+  rgb: MyString
+  alpha: MyString

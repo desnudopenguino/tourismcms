@@ -11,17 +11,10 @@ class MediaController < ApplicationController
     end
   end
 
-  # GET /media/1
-  # GET /media/1.json
-#  
-#  def new
-#    @medium = Medium.new
-#
-#    respond_to do |format|
-#      format.html # new.html.erb
-#      format.json { render json: @medium }
-#    end
-#  end
+  def show
+    @medium = Medium.find(params[:id])
+
+  end
 
   # GET /media/1/edit
   def edit

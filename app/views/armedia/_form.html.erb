@@ -1,0 +1,41 @@
+<%= form_for(@armedium) do |f| %>
+  <% if @armedium.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@armedium.errors.count, "error") %> prohibited this armedium from being saved:</h2>
+
+      <ul>
+      <% @armedium.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :medium_id %><br />
+    <%= f.text_field :medium_id %>
+  </div>
+  <div class="field">
+    <%= f.label :arcone_start %><br />
+    <%= f.text_field :arcone_start %>
+  </div>
+  <div class="field">
+    <%= f.label :arcone_end %><br />
+    <%= f.text_field :arcone_end %>
+  </div>
+  <div class="field">
+    <%= f.label :sound_track %><br />
+    <%= f.text_field :sound_track %>
+  </div>
+  <div class="field">
+    <%= f.label :rgb %><br />
+    <%= f.text_field :rgb %>
+  </div>
+  <div class="field">
+    <%= f.label :alpha %><br />
+    <%= f.text_field :alpha %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
