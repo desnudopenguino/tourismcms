@@ -42,7 +42,6 @@ Bct::Application.routes.draw do
   resources :attraction_tours do
     resources :media
     resources :messages
-    resources :arcones
   end
   
   resources :messages
