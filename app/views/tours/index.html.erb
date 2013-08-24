@@ -4,6 +4,7 @@
   <tr>
     <th>Title</th>
     <th>Description</th>
+    <th>Venue</th>
     <th></th>
   </tr>
 
@@ -11,6 +12,7 @@
   <tr>
     <td><%= tour.title %></td>
     <td><%= tour.description %></td>
+    <td><%= tour.venue.name %> </td>
     <td><%= link_to 'Show', tour %></td>
   </tr>
 <% end %>

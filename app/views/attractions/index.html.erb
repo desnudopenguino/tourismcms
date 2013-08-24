@@ -4,6 +4,7 @@
     <th>Title</th>
     <th>Description</th>
     <th>Location</th>
+    <th>Venue</th>
     <th></th>
   </tr>
 <% @attractions.each do |attraction| %>
@@ -11,6 +12,7 @@
     <td><%= attraction.title %></td>
     <td><%= attraction.description %></td>
     <td><%= "#{attraction.latitude}, #{attraction.longitude}" %></td>
+    <td><%= attraction.venue.name %>
     <td><%= link_to "View", attraction %></td>
   </tr>
 <% end %>
