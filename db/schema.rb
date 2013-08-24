@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130810011341) do
+ActiveRecord::Schema.define(:version => 20130821030742) do
 
   create_table "arcones", :force => true do |t|
     t.integer  "attraction_tour_id"
@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(:version => 20130810011341) do
     t.string  "content"
     t.integer "multimedia_id"
     t.string  "multimedia_type"
+    t.integer "order"
   end
 
   create_table "messages", :force => true do |t|

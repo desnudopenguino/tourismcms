@@ -10,7 +10,7 @@ class AttractionToursController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @attraction_tours.to_json(:include => [ :attraction, :messages, :media => { :include =>  :armedia }]) }
+      format.json { render json: @attraction_tours.to_json(:include => [ :attraction, :messages, :media => { :include =>  :armedia }].compact)}
     end
   end
 

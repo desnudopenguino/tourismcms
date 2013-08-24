@@ -3,6 +3,7 @@
 <table class="table table-striped">
   <tr>
     <th>Type</th>
+    <th>Order</th>
     <th>Content</th>
     <th></th>
     <th></th>
@@ -12,6 +13,7 @@
 <% @media.each do |medium| %>
   <tr>
     <td><%= medium.media_type %></td>
+    <td><%= medium.order %></td>
     <td><%= medium.content %></td>
     <td><%= link_to 'Show', medium.content %></td>
     <td><%= link_to 'Edit', edit_polymorphic_path([@multimedia, medium]) %></td>
@@ -25,6 +27,10 @@
   <div class="field">
     <%= f.label :media_type %><br />
     <%= f.text_field :media_type %>
+  </div>
+  <div class="field">
+    <%= f.label :order %><br />
+    <%= f.text_field :order %>
   </div>
   <div class="field">
     <%= f.label :content %><br />
