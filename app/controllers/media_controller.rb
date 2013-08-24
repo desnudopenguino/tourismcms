@@ -26,12 +26,10 @@ class MediaController < ApplicationController
   # POST /media.json
   def create
     @multimedia = find_media
-    #@medium = Medium.new(params[:medium])
     @medium = @multimedia.media.build(params[:medium])
 
     respond_to do |format|
       if @medium.save
-        #redirect_to :id => nil
         format.html { redirect_to @multimedia, notice: 'Medium was successfully created.' }
         #format.json { render json: @medium, status: :created, location: @medium }
       else

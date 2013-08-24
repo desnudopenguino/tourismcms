@@ -20,24 +20,14 @@
     <td><%= link_to 'Destroy', medium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
-</table>
-
-<h2>New Media</h2>
 <%= form_for([@multimedia, Medium.new]) do |f| %>
-  <div class="field">
-    <%= f.label :media_type %><br />
-    <%= f.text_field :media_type %>
-  </div>
-  <div class="field">
-    <%= f.label :order %><br />
-    <%= f.text_field :order %>
-  </div>
-  <div class="field">
-    <%= f.label :content %><br />
-    <%= f.text_field :content %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <tr>
+    <td><%= f.text_field :media_type %></td>
+    <td><%= f.text_field :order %></td>
+    <td><%= f.text_field :content %></td>
+    <td><%= f.submit %>
+    <td></td>
+    <td></td>
+  </tr>
 <% end %>
-
+</table>
