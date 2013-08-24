@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130821030742) do
+ActiveRecord::Schema.define(:version => 20130824054723) do
 
   create_table "arcones", :force => true do |t|
     t.integer  "attraction_tour_id"
@@ -105,9 +105,8 @@ ActiveRecord::Schema.define(:version => 20130821030742) do
   end
 
   create_table "venues", :force => true do |t|
-    t.string  "name"
-    t.string  "description"
-    t.boolean "active"
+    t.string "name"
+    t.string "description"
   end
 
   create_table "visitors", :force => true do |t|
